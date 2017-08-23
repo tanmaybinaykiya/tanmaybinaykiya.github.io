@@ -8,9 +8,9 @@ Email: [btanmay@gatech.edu ](mailto:btanmay@gatech.edu)
 ---
 ### Skills
 
-**Web Techonologies**: HTML/CSS, Javascript, NodeJS, Docker, MySQL, [AWS EC2](https://aws.amazon.com/ec2/), [AWS DynamoDB](https://aws.amazon.com/dynamodb/), [AWS ECS](https://aws.amazon.com/ecs/), [AWS Lambda](https://aws.amazon.com/lambda/), [SpringBoot](https://github.com/spring-projects/spring-boot)  
-**Programming Languages**: C, C++, Java, Python  
-**Other Frameworks**: OpenGL  
+Web Techonologies: HTML/CSS, Javascript, NodeJS, Docker, MySQL, [AWS EC2](https://aws.amazon.com/ec2/), [AWS DynamoDB](https://aws.amazon.com/dynamodb/), [AWS ECS](https://aws.amazon.com/ecs/), [AWS Lambda](https://aws.amazon.com/lambda/), [SpringBoot](https://github.com/spring-projects/spring-boot)  
+Programming Languages: C, C++, Java, Python  
+Other Frameworks: OpenGL  
 
 ---
 ### Research Interests
