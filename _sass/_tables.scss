@@ -7,7 +7,8 @@ table {
   width: 100%;
   max-width: 100%;
   margin-bottom: 1.5;
-  font-size: 1.125rem;
+  font-size: 0.8rem;
+  border-color:#333;
   // Cells
   > thead,
   > tbody,
@@ -16,16 +17,17 @@ table {
       > th,
       > td {
         padding: 12px;
-        line-height: 1.2;
+        line-height: 1;
         vertical-align: top;
-        border-top: 1px solid #333;
+        border-bottom: 1px solid #333;
       }
     }
   }
   // Bottom align for column headings
   > thead > tr > th {
     vertical-align: bottom;
-    border-bottom: 2px solid #333;
+    background-color: #eee;
+    border-bottom: 0;
   }
   // Remove top border from thead by default
   > caption + thead,
@@ -42,4 +44,9 @@ table {
   > tbody + tbody {
     border-top: 2px solid #333;
   }
+}
+
+
+.conv-arch-table td {
+  min-width:200px;
 }

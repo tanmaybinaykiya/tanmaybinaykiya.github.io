@@ -2,11 +2,14 @@
 title: Tanmay Binaykiya
 email: binaykiya.tanmay@gmail.com
 author: Tanmay Binaykiya
-description: "Tanmay Binaykiya's resume"
+description: "Tanmay Binaykiya"
 baseurl:     ""
+
 date_format: "%b %-d, %Y"
 header_pages:
  - contact.html
+
+permalink: /:title
 
 # Google services
 google_verification:
@@ -18,14 +21,19 @@ google_tag_manager:
 bing_verification:
 
 # Optional features
+
+# allow indexing, follow links, no archive
+meta_robots: index,follow,noarchive
+
 animated:             false
 show_related_posts:   false
 show_post_footers:    false
-show_social_icons:    false
+show_social_icons:    true
 ajaxify_contact_form: false
 enable_mathjax: false
-extended_fonts: false
+extended_fonts: true
 enable_anchorjs: false
+
 # Preview image for social media aka og:image and twitter:image
 post_preview_image: false
 
@@ -101,7 +109,7 @@ text:
   index:
     coming_soon: 'Coming soon...'
   contact:
-    email:    'btanmay@gatech.edu'
+    email:    ''
     content:  ''
     subject:  'New submission!'
     submit:   'Say Hello'
@@ -116,8 +124,9 @@ text:
 markdown:     kramdown
 redcarpet:
   extensions: ['smart', 'tables', 'with_toc_data']
-permalink:    pretty
+# permalink:    pretty
 paginate:     4
+paginate_path: "/blog/page:num/"
 sass:
   style: compressed
 gems:
