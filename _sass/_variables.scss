@@ -1,10 +1,10 @@
 // Typography
 $base-font-size: 14px !default;
 $bold-font-weight: bold !default;
-$font-family: 'Merriweather', 'PT Serif', Georgia, 'Times New Roman', serif !default;
-$line-height: 1.5 !default;
-$heading-font-family: 'Lato', 'Helvetica Neue', Helvetica, sans-serif !default;
-$heading-font-weight: 900 !default;
+$font-family: 'Computer Modern Serif', 'Lato', 'Helvetica Neue', Helvetica, sans-serif !default;
+$line-height: 1.25 !default;
+$heading-font-family: 'Computer Modern Bright', 'Lato', 'Helvetica Neue', Helvetica, sans-serif !default;
+$heading-font-weight: 400 !default;
 $heading-line-height: 1.25 !default;
 $monospace-font-family: 'Source Code Pro', Consolas, monospace !default;
 $h1: 2.998rem !default;
@@ -24,7 +24,7 @@ $h1-responsive-max: 3.84rem !default;
 $abbr-border-bottom: 1px black dotted;
 
 // Page width
-$measure-width: 42rem !default;
+$measure-width: 72rem !default;
 
 // Viewport widths
 $viewport-small: 32em;

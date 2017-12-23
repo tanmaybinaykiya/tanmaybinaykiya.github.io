@@ -12,8 +12,7 @@ p {
   line-height: 1.5;
 }
 
-small,
-.small {
+small, .small {
   font-size: 0.707rem;
 }
 
@@ -21,4 +20,8 @@ sup {
   position: relative;
   vertical-align: middle;
   top: -0.9ex;
+}
+
+a {
+  padding-bottom: 5px;
 }
