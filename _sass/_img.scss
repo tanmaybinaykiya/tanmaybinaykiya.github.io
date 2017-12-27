@@ -1,0 +1,24 @@
+.img-half-width{
+    float:left;
+    width: 48%;
+    margin-top:20px;
+}
+
+.img-half-width:nth-child(even) {
+    margin-left:4%;
+}
+
+.img-qtr-width{
+    float:left;
+    width: 24%;
+    margin-top:20px;
+    margin-left: 1%; 
+}
+
+.img-qtr-width:nth-child(5) {
+    clear: both;
+    margin-left: 0; 
+}
+.img-qtr-width:last-of-type::after{
+    clear: both;
+}
