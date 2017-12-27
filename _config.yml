@@ -29,7 +29,7 @@ extended_fonts: true
 enable_anchorjs: true
 
 # Preview image for social media aka og:image and twitter:image
-post_preview_image: false
+post_preview_image: true
 
 # Facebook Page integration
 # (for instant articles and other stuff)
@@ -120,7 +120,7 @@ redcarpet:
   extensions: ['smart', 'tables', 'with_toc_data']
 # permalink:    pretty
 paginate:     4
-paginate_path: "/blog/page:num/"
+paginate_path: "/projects/page:num/"
 sass:
   style: compressed
 gems:
