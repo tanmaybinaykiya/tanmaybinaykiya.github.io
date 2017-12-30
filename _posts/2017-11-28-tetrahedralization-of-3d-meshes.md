@@ -8,27 +8,91 @@ categories: computer-graphics 3d-modeling point-cloud delaunay-triangulation bal
 
 > This is the project report compiled by Sajid Anwar and Tanmay Binaykiya as part of the course requirements of [CS 6491 Computer Graphics](https://www.cc.gatech.edu/~jarek/6491/) under [Prof. Jaroslav Rossignac](https://www.cc.gatech.edu/~jarek/)
 
+<section class="table-of-contents">
+<h2>Table of Contents</h2>
 
+<ul>
+  <li><a href="#abstract">Abstract</a></li>
+  <li><a href="#approach">Approach</a>
+    <ul>
+      <li><a href="#bottom-up-approach">Bottom Up Approach</a></li>
+    </ul>
+  </li>
+  <li><a href="#delaunay-triangulation">Delaunay Triangulation</a>
+    <ul>
+      <li><a href="#algorithm-to-compute-the-delaunay-triangulation-of-set-p">Algorithm to compute the Delaunay triangulation of set P</a></li>
+    </ul>
+  </li>
+  <li><a href="#delaunay-tetrahedralization">Delaunay Tetrahedralization</a>
+    <ul>
+      <li><a href="#algorithm">Algorithm</a></li>
+      <ul>
+        <li><a href="#na%C3%AFve-approach-on5">Naïve Approach</a></li>
+        <li><a href="#a-more-efficient-approach-on4">A more efficient approach</a></li>
+      </ul>
+    </ul>
+  </li>
+  <li><a href="#tetrahedralization-results">Tetrahedralization Results</a></li>
+  <li><a href="#tetrahedralization">Tetrahedralization</a></li>
+  <li><a href="#point-cloud-generation">Point Cloud Generation</a></li>
+  <li><a href="#ball-pivoting-algorithm">Ball Pivoting Algorithm</a>
+    <ul>
+      <li><a href="#implementation-details">Implementation Details</a>
+        <ul>
+          <li><a href="#data-representation">Data Representation</a></li>
+          <li><a href="#point-cloud-generation">Point Cloud Generation</a>
+            <ul>
+              <li><a href="#sampling-points-on-a-cylinder">Sampling points on a Cylinder</a></li>
+              <li><a href="#sampling-points-on-a-sphere">Sampling points on a Sphere</a></li>
+            </ul>
+          </li>
+          <li><a href="#voxel-space">Voxel Space</a></li>
+          <li><a href="#ball-pivoting">Ball Pivoting</a>
+            <ul>
+              <li><a href="#seed-triangle">Seed triangle</a></li>
+              <li><a href="#ball-pivoting-algorithm">Ball Pivoting Algorithm</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><a href="#optimizations">Optimizations</a>
+    <ul>
+      <li><a href="#in-voxel-search">In-voxel search</a></li>
+    </ul>
+  </li>
+  <li><a href="#smooth-shading">Smooth shading</a></li>
+  <li><a href="#results">Results</a>
+    <ul>
+      <li><a href="#without-smooth-vertex-shading">Without Smooth Vertex Shading</a></li>
+      <li><a href="#after-vertex-smoothing">After vertex smoothing</a></li>
+    </ul>
+  </li>
+  <li><a href="#completeness">Completeness</a></li>
+  <li><a href="#references">References</a></li>
+</ul>
+</section>
 
-# Abstract
+## Abstract
 
 The project aims to compute a tetrahedronalization from balls on a floor and on a ceiling, to create a mesh that is comprised of cylinders and spheres corresponding to the edges and vertices of the tetrahedra, and finally computing a water tight approximation of the boundary of those cylinders and spheres given a point cloud. The tetrahedronalization is computed using Delaunay triangulation extended to three dimensions. We generate the mesh we want to approximate by creating spheres at the vertices and cylinders at the edges of all of the tetrahedra that were computed. Points are sampled on all of the spheres and cylinders to obtain the point cloud, and finally ball pivoting is used to reconstruct the surface of our mesh using the point cloud.
 
 _The project code has been hosted on github [here](https://github.com/tanmaybinaykiya/Surface-Reconstruction-from-Point-Cloud-Data)_
 
-<center><iframe width="1280" height="720" src="https://www.youtube.com/embed/bC1mUjPqBsM?rel=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe></center>
+<center><iframe width="800" height="450" src="https://www.youtube.com/embed/bC1mUjPqBsM?rel=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe></center>
 
 
-# Approach
+## Approach
 
-## Bottom Up Approach
+### Bottom Up Approach
 
 * To compute a water tight mesh, we need a point cloud which is usually obtained by 3-dimensional scans of real world objects.
 * To simplify this step, we simulate a point cloud by creating objects in the scene and sampling points on them.
 * The scene that we generate needs to be complex enough, that there are multiple objects intersecting. We choose the sampling of spheres and cylinders for the same.
 * The scene is built as a truss structure formed by spheres segregated in 2 layers(floor and ceiling) and cylinders connecting them. To make it more realistic, we use a DeLaunay tetrahedralization to connect the points between the floor and the ceiling.
 
-# Delaunay Triangulation
+## Delaunay Triangulation
 
 A Delaunay triangulation for a given set P of discrete points in a plane is a triangulation DT(P) such that no point in P is inside the circumcircle of any triangle in DT(P).
 
@@ -39,14 +103,14 @@ a) This triangulation does not meet the Delaunay condition (the sum of α and γ
 b) This pair of triangles does not meet the Delaunay condition (the circumcircle contains more than three points)
 c) Flipping the common edge produces a valid Delaunay triangulation for the four points
 
-## Algorithm to compute the Delaunay triangulation of set P
+### Algorithm to compute the Delaunay triangulation of set P
 
 ```
 for each triplet of points (A, B, C) in P, find the circumcircle (center Q, radius r)
     for point D in P that is not A, B or C
         if d(D, Q) &lt; r
-            # we have found a point that is inside the circumcircle of (A, B, C).
-            # Hence (A, B, C) cannot be in the DT(P)
+            ## we have found a point that is inside the circumcircle of (A, B, C).
+            ## Hence (A, B, C) cannot be in the DT(P)
             fail = true
             break
     if fail == true
@@ -55,7 +119,7 @@ for each triplet of points (A, B, C) in P, find the circumcircle (center Q, radi
         add (A, B, C) to DT(P)
 ```        
 
-# Delaunay Tetrahedralization
+## Delaunay Tetrahedralization
 
 A Tetrahedron is a polyhedron composed of four triangular faces, six straight edges, and four vertex corners.
 
@@ -67,16 +131,16 @@ Figure 3.1 below illustrates these representations in a visual form. Each of the
 
 **Figure 4** Tetrahedron
 
-## Algorithm
+### Algorithm
 
-## Naïve Approach: O(N<sup>5</sup>)
+#### Naïve Approach: O(N<sup>5</sup>)
 
 ```
 for each quadruplet of points (A, B, C, D) in P, 
     find the circumsphere(Center Q, radius r) 
     for point E in P that is not A, B, C or D
         if d(E, Q) < r
-        # we have found a point that is inside the circumsphere of (A, B, C, D). Hence (A, B, C, D) cannot be in the DTH(P)
+        ## we have found a point that is inside the circumsphere of (A, B, C, D). Hence (A, B, C, D) cannot be in the DTH(P)
         fail = true
         break
     if fail == true
@@ -85,23 +149,23 @@ for each quadruplet of points (A, B, C, D) in P,
         add (A,B,C,D) to DTH(P) 
 ```
 
-## A more efficient approach O(N<sup>4</sup>)
+#### A more efficient approach: O(N<sup>4</sup>)
 
 We use the concept of a bulge to find D (on the ceiling). Given that the planes are parallel, we can assume that the circumsphere&#39;s center lies on normal of the floor through the circumcenter of the circumcircle of Triangle ABC. Also, the intersection of the circumsphere with the ceiling will result in a circle and D will lie on this circle. As all other points lie on the ceiling and no other point on the ceiling lies in the circumsphere, D should be the closest to the center of this circle.
 
 Hence, we find the projection of the circumcenter of the circumcircle of Triangle ABC on the ceiling and find the point closest to it.
 
 ```
-Perform a Delaunay Triangulation on P = DT(P)
-  for each triangle ABC in P:
+perform a Delaunay Triangulation(say DT(P)) on P 
+  for each triangle ABC in DT(P):
      find the circumcircle(center Q, radius R)
      find the intersection R of N = AB x BC through Q on the second plane 
      find the point D in the second plane that is nearest to R
 ```
 
-_Further improvements can be made in this approach by rejecting points farther than a certain a certain threshold. This approximate distance should be computed without the use of square roots or the cost of the optimization is higher than the advantage. This can be done by a rectangular comparison(using square as an approximation of the circle to facilitate computing)_
+_Further improvements can be made in this approach by rejecting points farther than a fixed threshold. This approximate distance should be computed without the use of square roots or the cost of the optimization is higher than the advantage. This can be done by a rectangular comparison(using square as an approximation of the circle to facilitate computing)_
 
-# Tetrahedralization Results
+## Tetrahedralization Results
 
 The following are illustrations of the Delaunay Triangulation of the ceiling and floor.
 
@@ -124,7 +188,7 @@ The following are illustrations of the Delaunay Triangulation of the ceiling and
   </tbody>
 </table>
 
-# Tetrahedralization
+## Tetrahedralization
 
 The tetrahedralization progress is documented as illustrated in the screenshots below:
 
@@ -148,7 +212,7 @@ The current process is that we do a tetrahedralization of the floor and the ceil
   </tbody>
 </table>
 
-# Point Cloud Generation
+## Point Cloud Generation
 
 The Ball Pivot Algorithm typically computes a water tight mesh of a given point cloud obtained from high res scans of real world objects. To generate a point cloud, we use the tetrahedralization of the ceiling and floor points. We &quot;create&quot; cylinders to represent edges and spheres to represent the points on the celing and the floor.
 
@@ -157,7 +221,7 @@ For each of the cylinders and spheres we densely sample points. This collection 
 The following diagram illustrates the point cloud hence obtained.
 <img src="{{base}}/images/cg/6491-p5/point-cloud.png"/>
 
-# Ball Pivoting Algorithm
+## Ball Pivoting Algorithm
 
 The Ball-Pivoting Algorithm (BPA) provided by [1] computes a triangle mesh interpolating a given point cloud. Typically, the points are surface samples acquired with multiple range scans of an object. The principle of the BPA is very simple:
 
@@ -170,9 +234,9 @@ The Ball-Pivoting Algorithm (BPA) provided by [1] computes a triangle mesh inter
 **2 dimensional representation of the Ball Pivoting algorithm**: A circle of radius **r** pivots from sample point to sample point, connecting them with edges 
 _Figure courtesy of [1](#references)_ 
 
-## Implementation Details
+### Implementation Details
 
-### Data Representation
+#### Data Representation
 
 | Point               | Triplet&lt;Float, Float, Float&gt;: representing the x, y, z coordinates of a point | 
 | PointCloud          | List&lt;Point&gt; | 
@@ -185,9 +249,9 @@ _Figure courtesy of [1](#references)_
 | Explored            | Set&lt;Edge&gt; representing the intermediate data while computing the water tight mesh. Contains the set of edges which have been pivoted about. | 
 | Boundary Edges      | Set&lt;Edge&gt;: representing the intermediate data while computing the water tight mesh. Contains the set of edges which have been pivoted about and are found to be boundary edges (only 1 triangle is incident on the edge). | 
 
-### Point Cloud Generation
+#### Point Cloud Generation
 
-#### Sampling points on a Cylinder
+##### Sampling points on a Cylinder
 
 Points are sampled on the cylinder such that applying the BPA Algorithm of the sampled points form equilateral triangles. To sample points along a cylinder, we iterate along the length of the cylinder in fixed length increments. At each length-wise iteration, we iterate around the circular boundary of the cylinder in fixed angular increments.
 
@@ -205,7 +269,7 @@ The diagram below shows the sampling of points along the cylinder (the sampled p
 
 <img src="{{base}}/images/cg/6491-p5/cyl-sampling.png"/>
 
-#### Sampling points on a Sphere
+##### Sampling points on a Sphere
 
 Similar to the sampling on the cylinders, points are sampled on the sphere in slices along a diameter of the sphere. The number of slices, N, is predetermined. For each slice, the radius of the circle is computed as
 
@@ -221,13 +285,13 @@ The resultant point cloud is shown below, where the vertices of the displayed tr
 
 All points hence obtained are collected in _PointCloud_.
 
-### Voxel Space
+#### Voxel Space
 
 Some of the steps of the ball pivoting algorithm rely on finding the &quot;best&quot; point in a given point&#39;s neighborhood, for various definitions of &quot;best&quot;. However, before we obtain the triangles from ball pivoting, there is no connectivity data associated with the point cloud, and therefore all points in the cloud must be iterated when attempting to find the best point. We improve this naïve iteration by partitioning the space into voxels and keeping track of which points are contained within a given voxel, allowing us to quickly get the neighborhood of a point and drastically improve performance. The ball pivoting algorithm discussed in the next section will assume an implementation without the voxel space partition, in which all points must be iterated when searching. The voxel space implementation and changes to the ball pivoting algorithm to accommodate voxels is discussed in section 8.1.
 
-### Ball Pivoting
+#### Ball Pivoting
 
-#### Seed triangle
+##### Seed triangle
 
 The seed triangle is the triangle chosen to start the ball pivoting from. The triangle should satisfy the constraint that **the pivotBall must rest on the points such that no other point lies inside this ball.**
 
@@ -237,7 +301,7 @@ If any other point is at a distance less than the pivot ball&#39;s radius, it li
 
 Once we find this seed triangle, we push its three edges onto the frontier, and add it as the first triangle on our generated triangle set.
 
-#### Ball Pivoting Algorithm
+##### Ball Pivoting Algorithm
 
 The ball pivoting algorithm is as follows. We continuously remove edge-vertex pairs from the frontier. The edge-vertex pair form the triangle that the ball will pivot from. The ball will initially rest on the three points of the edge and vertex, and will pivot over the edge.
 
@@ -252,9 +316,9 @@ Each time we get a pivot edge and a vertex from the frontier:
 
 The algorithm completes after there are no edges on the frontier. At this point, we have a set of triangles corresponding to the triangulation of the surface of the point cloud.
 
-# Optimizations
+## Optimizations
 
-## In-voxel search
+### In-voxel search
 
 The most expensive computation in the pipeline is the Ball Point Algorithm. While finding the _pivot-able vertex,_ we look at all other vertices. This is redundant as most other points are far enough that the ball can&#39;t pivot to them. We find the best vertex for pivoting by determining which vertex results in the smallest angle that the ball must pivot to reach that vertex. This operation is expensive as it involves complex mathematical functions.
 
@@ -270,7 +334,7 @@ The following changes are made to the algorithm to use the voxel space optimizat
 
 This approach improves the runtime performance considerably, enough for the computations to be done runtime (**over 15fps)**.
 
-# Smooth shading
+## Smooth shading
 
 The mesh generated is a polygonal approximation of the smooth surface, owing to which the mesh does not look organic. We apply the technique of smooth shading to combat this problem.
 
@@ -282,9 +346,9 @@ With smooth shading, the normal vectors of each vertex are approximated so as to
 
 
 
-# Results
+## Results
 
-## Without Smooth Vertex Shading
+### Without Smooth Vertex Shading
 
 <table >
   <tbody>
@@ -305,7 +369,7 @@ With smooth shading, the normal vectors of each vertex are approximated so as to
 
 
 
-## After vertex smoothing
+### After vertex smoothing
 
 <table>
   <tbody>
@@ -320,7 +384,7 @@ With smooth shading, the normal vectors of each vertex are approximated so as to
 
 
 
-# Completeness
+## Completeness
 
 The attached program fails to build a completely water tight mesh due to the following failures.
 
@@ -330,7 +394,7 @@ A few holes can be seen on the surface of the mesh.
 
 _The holes can be cleaned up using a post processing step. Through the previous step, we have a list of all border edges. If we find a closed loop of border edges of size 3, we can assume it is an anomoly and fill the triangle up._ 
 
-# References
+## References
 
 1. [F. Bernardini, J. Mittleman, H. Rushmeier, C. Silva and G. Taubin, "The ball-pivoting algorithm for surface reconstruction," in IEEE Transactions on Visualization and Computer Graphics, vol. 5, no. 4, pp. 349-359, Oct.-Dec. 1999](http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=817351&isnumber=17715)
 2. [T. Lewiner, H. Lopes, J. Rossignac and A. W. Vieira, "Efficient Edgebreaker for surfaces of arbitrary topology," Proceedings. 17th Brazilian Symposium on Computer Graphics and Image Processing, 2004, pp. 218-225.](http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=1352964&isnumber=29722)

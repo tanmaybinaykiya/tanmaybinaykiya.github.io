@@ -3,14 +3,13 @@ layout:     post
 title:      Scene Classification with Deep Learning
 date:       2017-12-22 14:12:22
 summary:    Scene Classification with Deep Learning
-categories: computer-vision machine-learning deep-learning
+categories: computer-vision machine-learning deep-learning image-classification neural-nets CIFAR-10 D-CNNs ImageNet-datasets Krizhevsky VGG-16-network batch-normalization deep-convolutional-neural-networks image-classification imagenet-large-scale-visual-recognition-challenge Acceleration Computational-modeling Convolution Data-models Error-analysis Neural-networks Training
 ---
 <img src="{{ base }}/images/cv/proj6/header.png" />
 
 > This project report was compiled as part of the course requirements of [CS 6476 Computer Vision](https://www.cc.gatech.edu/~hays/compvision/) under [Prof. James Hays](https://www.cc.gatech.edu/~hays/)
 
-In this project we use convolutional neural networks to classify scenes into categories. Convolutional refers to the convolutional nature of the intermediate layers. The activations of the cells in a conv layer are a result of a convolution of multiple cells in the previous layer, much like the convolution of matrices. When a convolutional layer derives its activations from all channels of the previous layer it is termed as a fully convolutional layer.
-
+In this project we use convolutional neural networks to classify scenes into categories. 
 In Part 1, we train a neural network from scratch and in Part 2, we use the pretrained VGG network and fine tune it to our data.
 
 ## Part 1
@@ -44,8 +43,7 @@ We train a network to categorize images in the 15 scene categories. The followin
 
 **Result**
 
-<img src="{{ base }}/images/cv/proj6/part1/network 18/trainingCurves.png" width="50%" style="float:left"/>
-<img src="{{ base }}/images/cv/proj6/part1/network 18/FirstLayerFilters.png" width="50%" style="float:left"/>
+<center><img src="{{ base }}/images/cv/proj6/part1/network 18/trainingCurves.png" width="50%" /></center>
 
 The given network, produces an accuracy of 57.8% with a learning rate of 0.01 in 50 epochs
 
@@ -68,8 +66,7 @@ The following networks are modified versions of the network specified in the pro
 
 Results
 
-<img src="{{ base }}/images/cv/proj6/part1/network 8/trainingCurves.png" width="50%" style="float:left"/>
-<img src="{{ base }}/images/cv/proj6/part1/network 8/FirstLayerFilters.png" width="50%" style="float:left"/>
+<center><img src="{{ base }}/images/cv/proj6/part1/network 8/trainingCurves.png" width="50%" /></center>
 
 Lowest validation error for above network: 0.494000
 
@@ -87,8 +84,7 @@ Lowest validation error for above network: 0.494000
 
 Results
 
-<img src="{{ base }}/images/cv/proj6/part1/network 10/trainingCurves.png" width="50%" style="float:left"/>
-<img src="{{ base }}/images/cv/proj6/part1/network 10/FirstLayerFilters.png" width="50%" style="float:left"/>
+<center><img src="{{ base }}/images/cv/proj6/part1/network 10/trainingCurves.png" width="50%"/></center>
 
 
 Lowest validation error for above network: 0.457333
@@ -106,8 +102,7 @@ Lowest validation error for above network: 0.457333
 
 Results
 
-<img src="{{ base }}/images/cv/proj6/part1/network 12/trainingCurves.png" width="50%" style="float:left"/>
-<img src="{{ base }}/images/cv/proj6/part1/network 12/FirstLayerFilters.png" width="50%" style="float:left"/>
+<center><img src="{{ base }}/images/cv/proj6/part1/network 12/trainingCurves.png" width="50%"/></center>
 
 Lowest validation error for above network: 0.436000
 
@@ -124,8 +119,7 @@ Lowest validation error for above network: 0.436000
 
 Results
 
-<img src="{{ base }}/images/cv/proj6/part1/network 18/trainingCurves.png" width="50%" style="float:left"/>
-<img src="{{ base }}/images/cv/proj6/part1/network 18/FirstLayerFilters.png" width="50%" style="float:left"/>
+<center><img src="{{ base }}/images/cv/proj6/part1/network 18/trainingCurves.png" width="50%"/></center>
 
 Lowest validation error for above network: 0.412667
 
@@ -143,8 +137,7 @@ Lowest validation error for above network: 0.412667
 
 Results
 
-<img src="{{ base }}/images/cv/proj6/part1/network 19/trainingCurves.png" width="50%" style="float:left"/>
-<img src="{{ base }}/images/cv/proj6/part1/network 19/FirstLayerFilters.png" width="50%" style="float:left"/>
+<center><img src="{{ base }}/images/cv/proj6/part1/network 19/trainingCurves.png" width="50%"/></center>
 
 Lowest validation error for above network: 0.416667
 
@@ -161,8 +154,7 @@ Lowest validation error for above network: 0.416667
 
 Results
 
-<img src="{{ base }}/images/cv/proj6/part1/network 20/trainingCurves.png" width="50%" style="float:left"/>
-<img src="{{ base }}/images/cv/proj6/part1/network 20/FirstLayerFilters.png" width="50%" style="float:left"/>
+<center><img src="{{ base }}/images/cv/proj6/part1/network 20/trainingCurves.png" width="50%"/></center>
 
 Lowest validation error for above network: 0.436000
 
@@ -176,7 +168,7 @@ The following results are with a learning rate of 0.001 in 50 epochs
 8 |0.494 |0.103 |245.84
 10|0.457 |0.094 |241.91
 12|0.436 |0.105 |239.26
-18|0.413|0.083 |238.09
+**18**|**0.413**|**0.083** |**238.09**
 19|0.417 |0.097 |240.48
 20|0.436 |0.085 |240.52
 
@@ -184,13 +176,13 @@ The following results are with a learning rate of 0.001 in 50 epochs
 
 Once the best spatial resolution for the full conv layer was found, the learning rate was chosen by experimenting with multiple values
 
-**Learning Rate**|**Accuracy (Lowest Validation error)**|**Learning Rate Curves**|**First Layer Filters**
+**Learning Rate**|**Accuracy (Lowest Validation error)**|**Learning Rate Curves**
 :-----:|:-----:|:-----:|:-----:
-10<sup>-5</sup> |0.758667 | ![][p1N18lr5TrainingCurves] | ![][p1N18lr5FirstLayerFilters]
-10<sup>-4</sup> |0.509333 | ![][p1N18lr4TrainingCurves] | ![][p1N18lr4FirstLayerFilters]
-10<sup>-3</sup> |0.412667 | ![][p1N18lr3TrainingCurves] | ![][p1N18lr3FirstLayerFilters]
-10<sup>-2</sup> |0.412667 | ![][p1N18lr2TrainingCurves] | ![][p1N18lr2FirstLayerFilters]	
-10<sup>-1</sup> |0.412667 | ![][p1N18lr1TrainingCurves] | ![][p1N18FirstLayerFilters]	
+**10<sup>-5</sup>** |**0.758667** | ![][p1N18lr5TrainingCurves] 
+10<sup>-4</sup> |0.509333 | ![][p1N18lr4TrainingCurves] 
+10<sup>-3</sup> |0.412667 | ![][p1N18lr3TrainingCurves] 
+10<sup>-2</sup> |0.412667 | ![][p1N18lr2TrainingCurves] 
+10<sup>-1</sup> |0.412667 | ![][p1N18lr1TrainingCurves] 
 
 ## Part 2: Transfer Learning
 
@@ -221,8 +213,7 @@ Replace the Fully Convolutional Layer by a new(randomly initialized) FC Layer wi
 
 The above network was retrained on the last 9 layers, and an accuracy of the 87.6% was achieved in 5 epochs with a constant learning rate of 0.001
 
-<img src="{{ base }}/images/cv/proj6/part2/22 Layers/trainingCurves.png" width="50%" style="float:left">
-<img src="{{ base }}/images/cv/proj6/part2/22 Layers/FirstLayerFilters.png" width="50%" style="float:left">
+<center><img src="{{ base }}/images/cv/proj6/part2/22 Layers/trainingCurves.png" width="50%"/></center>
 
 --- 
 
@@ -262,7 +253,6 @@ Replace the last Fully Convolutional Layer(FC-8) by a new(randomly initialized) 
 <center><img src="{{ base }}/images/cv/proj6/part2/22 Layers backprop 5/trainingCurves.png"  width="50%"></center>
 
 Validation Accuracy in 5 epochs: 87.7% (756.40 secs)
-Validation Accuracy in 4 epochs: 86.2% (545.50 secs)
 
 --- 
 
@@ -296,7 +286,7 @@ Validation Accuracy: 82.66% in 5 epochs (588.709 seconds)
 Architecture 1                              |87.6%
 Architecture 1(image size jittering)        |86.8%
 Architecture 2                              |50.6%
-Architecture 3(Backprop Depth 5)            |87.7%
+**Architecture 3(Backprop Depth 5)**            |**87.7%**
 Architecture 3(Backprop Depth 6)            |86.2%
 Architecture 4                              |82.6%
 
@@ -316,7 +306,8 @@ We use the data set provided as part of the article: [How Do Humans Sketch Objec
 * To split into data and train set, I duplicated the folders and called them train and test.
 * In train, I delete all images with odd numbered endings and even numbered endings in test
 
-The following snippet can be used as a shell script to
+
+The following shell script can be used to split the dataset into the training and test set
 
 ```sh
 cp -r dataset train
@@ -337,7 +328,7 @@ find test/ -name "*8.png" -delete
 
 I added proj6_extra_credit_setup_data.m, proj6_extra_credit.m, proj6_extra_credit_cnn_init.m for the extra credit section.
 
-I used the same VGG fine tuned network from part2 for this task with minor modifications
+I used the VGG network from part2 for this task with minor modifications
 
 * **Data Set**: As opposed to the given dataset which had 15 categories with 200 images each, the sketch tokens data set has 250 categories with 80 images each. VGG requires that each image be 224 x 224 pixels. Due to memory constraints I choose 50 categories at random and train/test my network on these categories.
 * **Network Changes**: I have used the exact same network from part2, but changed the final layer to predict 250 categories instead of 15.
@@ -390,3 +381,10 @@ Hyper Parameters
 
 [p1N18lr1TrainingCurves]: {{ base }}/images/cv/proj6/part1/network 18 - lr -1/trainingCurves.png
 [p1N18lr1FirstLayerFilters]: {{ base }}/images/cv/proj6/part1/network 18 - lr -1/FirstLayerFilters.png	
+
+
+## References
+
+* [S. Liu and W. Deng, "Very deep convolutional neural network based image classification using small training sample size," 2015 3rd IAPR Asian Conference on Pattern Recognition (ACPR), Kuala Lumpur, 2015, pp. 730-734.](http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7486599&isnumber=7486438)
+* [Mathias Eitz, James Hays, and Marc Alexa. 2012. How do humans sketch objects?. ACM Trans. Graph. 31, 4, Article 44 (July 2012)](https://doi.org/10.1145/2185520.2185540)
+
