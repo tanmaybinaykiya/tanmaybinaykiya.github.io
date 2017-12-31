@@ -9,7 +9,7 @@ Email: [btanmay@gatech.edu ](mailto:btanmay@gatech.edu)
 
 ## Research Interests
 
-- Machine Learning, Deep Learning, Computer Vision
+Machine Learning, Deep Learning, Computer Vision
 
 ## Courses 
 
