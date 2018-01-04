@@ -9,8 +9,5 @@ layout: default
 
     <span>I completed my Bachelors(Hons.) in Computer Science and Masters(Hons.) in Mathematics from Birla Institute of Technology & Science, Pilani</span>
     <br><br>
-    <span>Checkout my <a href="/blog">Project Page</a> and <a href="/cv">CV</a></span>
+    <!-- <span>Checkout my <a href="/blog">Project Page</a> and <a href="/cv">CV</a></span> -->
 </section>
-
-
-

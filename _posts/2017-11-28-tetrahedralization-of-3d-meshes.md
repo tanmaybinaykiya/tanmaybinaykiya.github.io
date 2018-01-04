@@ -2,6 +2,7 @@
 layout:     post
 title:      Surface Reconstruction from Point Cloud Data
 date:       2017-11-28 17:11:28
+tags:       project
 summary:    Water Tight Surface Reconstruction of 3D Point Cloud Data using the Ball Pivoting Algorithm
 categories: computer-graphics 3d-modeling point-cloud delaunay-triangulation ball-pivoting-algorithm  computational-geometry image-reconstruction mesh-generation seed-triangle surface-reconstruction surface-samples triangle-mesh data-acquisition geometrical-optics image-reconstruction sampling-methods shape surface-reconstruction three-dimensional-displays computational-complexity data-compression graph-theory topology edgebreaker spirale-Reversi arbitrary-topology compression decompression orientable-manifold-surfaces data-structures geometry image-reconstruction performance-evaluation surgery topology transform-coding
 ---
@@ -257,11 +258,16 @@ Points are sampled on the cylinder such that applying the BPA Algorithm of the s
 
 By defining N as the number of points to be sampled along the circumference, the fixed angle increment ϴ  is:
 
-    ϴ = 2π/N
+$$
+θ=\frac{2\pi}{N}
+$$
 
 The number of slices along the length of the cylinder is then given by
 
-<img src="{{base}}/images/cg/6491-p5/eqn-1.png"/>
+
+$$
+\frac{cylinderLength}{\sqrt{3} r \sin(\frac{\theta}{2})}
+$$
 
 This number of slices is obtained as a ratio between the height and the side length of an equilateral triangle. Points are now sampled at each of these slices at every ϴ angle.
 
@@ -273,11 +279,19 @@ The diagram below shows the sampling of points along the cylinder (the sampled p
 
 Similar to the sampling on the cylinders, points are sampled on the sphere in slices along a diameter of the sphere. The number of slices, N, is predetermined. For each slice, the radius of the circle is computed as
 
-<img src="{{base}}/images/cg/6491-p5/eqn-2.png"/>
+$$
+\sqrt{R^2 - l^2}
+$$
 
 where R is the radius of sphere, and l is the distance of the slice from the center of sphere.
 
-The angle increment ϴ is now computed as _ϴ = 2π/N_. Points are now sampled along each slice at every ϴ .
+The angle increment ϴ is now computed as 
+
+$$
+θ=\frac{2\pi}{N}
+$$
+
+Points are now sampled along each slice at every ϴ .
 
 The resultant point cloud is shown below, where the vertices of the displayed triangles are the sampled points.
 

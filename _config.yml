@@ -4,11 +4,18 @@ email: binaykiya.tanmay@gmail.com
 author: Tanmay Binaykiya
 description: "Tanmay Binaykiya"
 baseurl:     ""
+type: 
+  - blogpost
+  - project
+
 
 date_format: "%b %-d, %Y"
 header_pages:
+ - projects.html
+ - posts.html
+ - cv.md
  - contact.html
-
+ 
 permalink: /:title
 
 # Google analytics
@@ -24,8 +31,8 @@ show_related_posts:   false
 show_post_footers:    false
 show_social_icons:    true
 ajaxify_contact_form: false
-enable_mathjax: false
-extended_fonts: true
+enable_mathjax: true
+extended_fonts: false
 enable_anchorjs: true
 
 # Preview image for social media aka og:image and twitter:image
@@ -103,8 +110,8 @@ text:
   index:
     coming_soon: 'Coming soon...'
   contact:
-    email:    ''
-    content:  ''
+    email:    'Enter your email id here...'
+    content:  'Hi'
     subject:  'New submission!'
     submit:   'Say Hello'
     ajax:
@@ -124,6 +131,7 @@ paginate_path: "/projects/page:num/"
 sass:
   style: compressed
 gems:
+  - jekyll-seo-tag
   - jekyll-paginate
   - jekyll-sitemap
 # https://github.com/jekyll/jekyll/issues/2938

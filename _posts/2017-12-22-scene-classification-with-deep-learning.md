@@ -4,6 +4,7 @@ title:      Scene Classification with Deep Learning
 date:       2017-12-22 14:12:22
 summary:    Scene Classification with Deep Learning
 categories: computer-vision machine-learning deep-learning image-classification neural-nets CIFAR-10 D-CNNs ImageNet-datasets Krizhevsky VGG-16-network batch-normalization deep-convolutional-neural-networks image-classification imagenet-large-scale-visual-recognition-challenge Acceleration Computational-modeling Convolution Data-models Error-analysis Neural-networks Training
+tags:       project
 ---
 <img src="{{ base }}/images/cv/proj6/header.png" />
 

@@ -4,6 +4,7 @@ title:      Raytracer
 date:       2013-09-02 13:09:02
 summary:    OpenGL/C++ based Raytracer
 categories: computer-graphics rendering raytracer
+tags:       blogpost
 ---
 
 I have been working on this project for a while now. I got my first positive results yesterday. 

@@ -1,31 +1,31 @@
 ---
 layout: default
+permalink: /cv/
+title: CV
 ---
 
-Pursuing Master of Science in Computer Science at Georgia Institute of Technology, Atlanta  
-Email: [btanmay@gatech.edu ](mailto:btanmay@gatech.edu)  
-
-<!-- ## Skills -->
+## Summary
+Pursuing Master of Science in Computer Science at Georgia Institute of Technology, Atlanta with a specialization in Machine Learning. Exploring Deep Learning methods in Computer Vision. 
 
 ## Research Interests
 
 Machine Learning, Deep Learning, Computer Vision
 
-## Courses 
+## Graduate Courses 
 
 - Computer Vision
 - Computer Graphics 
-- Artificial Intelligence
+- Artificial Intelligence  
 
 ## Education
 
--  2009 - 2015: Master of Science(Hons.) Mathematics and Bachelor of Engineering (Hons.) Computer Science 
-   Birla Institute of Technology And Science, Pilani Goa Campus
+-  2009 - 2015: Master of Science(Hons.) Mathematics and Bachelor of Engineering (Hons.) Computer Science   
+   Birla Institute of Technology And Science, Pilani Goa Campus  
    CGPA:  7.85 / 10  
 
--  2017 (ongoing): Master of Science, Computer Science
-   Georgia Institute of Technology, Atlanta
-   CGPA:  4.0 / 4.0
+-  Aug 2017 (ongoing): Master of Science, Computer Science  
+   Georgia Institute of Technology, Atlanta    
+   CGPA: 4.0 / 4.0 
 
 ## Academic Projects
 
@@ -102,14 +102,15 @@ Jul 2014 - Jul 2015
 Software Development Intern, Systems   
 May 2012 - Jul 2012    
 
+##### Technologies Used: HTML, CSS, ASP.NET
 * Redesigned and developed the ASP .NET based internal website
 
 ### Ojaswi Tech, Pune 
 Graphic Design Intern   
 Jun 2011 - Aug 2011   
-
-* Developed UI Mocks and designs for a wide variety of clients. Collaborated with developers on the UI elements.The work involved using a wide range of applications like Adobe Photoshop, Adobe Illustrator, Adobe Dreamweaver.
-* Developed Marketing Presentation Videos using Adobe After Eects and Adobe Flash
+##### Technologies Used: Adobe Photoshop, Adobe Illustrator, Adobe Dreamweaver, Adobe After Effects, Adobe Flash
+* Developed UI mocks for a client websites and developed UI elements standards.
+* Developed Marketing Presentation Videos for company clients
  
 ## Certifications  
 
