@@ -1,0 +1,285 @@
+>> proj5
+Found extra_positive_features_HoG_1_hCellSize_3.mat
+Found negative_features_10000_HoG_1_hCellSize_3.mat
+Found classifier_neg_only_extra_10000_HoG_1_hCellSize_3.mat
+Initial classifier performance on train data:
+  accuracy:   0.999
+  true  positive rate: 0.722
+  false positive rate: 0.000
+  true  negative rate: 0.277
+  false negative rate: 0.001
+vl_hog: descriptor: [12 x 12 x 31]
+vl_hog: glyph image: [252 x 252]
+vl_hog: number of orientations: 9
+vl_hog: variant: UOCTTI
+Running Detector on test scenes now. ../data/test_scenes/test_jpg
+Detecting faces in Argentina.jpg
+ non-max suppression: 209 detections to 58 final bounding boxes
+Detecting faces in Arsenal.jpg
+ non-max suppression: 306 detections to 74 final bounding boxes
+Detecting faces in Brazil.jpg
+ non-max suppression: 229 detections to 48 final bounding boxes
+Detecting faces in Colombia.jpg
+ non-max suppression: 188 detections to 46 final bounding boxes
+Detecting faces in Ecuador.jpg
+ non-max suppression: 251 detections to 55 final bounding boxes
+Detecting faces in England.jpg
+ non-max suppression: 292 detections to 51 final bounding boxes
+Detecting faces in Germany.jpg
+ non-max suppression: 306 detections to 56 final bounding boxes
+Detecting faces in J-L_Picard.Baldy.jpg
+ non-max suppression: 36 detections to 7 final bounding boxes
+Detecting faces in USA.jpg
+ non-max suppression: 163 detections to 50 final bounding boxes
+Detecting faces in addams-family.jpg
+ non-max suppression: 162 detections to 41 final bounding boxes
+Detecting faces in aeon1a.jpg
+ non-max suppression: 563 detections to 54 final bounding boxes
+Detecting faces in aerosmith-double.jpg
+ non-max suppression: 102 detections to 14 final bounding boxes
+Detecting faces in albert.jpg
+ non-max suppression: 6 detections to 2 final bounding boxes
+Detecting faces in audrey1.jpg
+ non-max suppression: 100 detections to 27 final bounding boxes
+Detecting faces in audrey2.jpg
+ non-max suppression: 123 detections to 26 final bounding boxes
+Detecting faces in audrybt1.jpg
+ non-max suppression: 115 detections to 29 final bounding boxes
+Detecting faces in baseball.jpg
+ non-max suppression: 55 detections to 14 final bounding boxes
+Detecting faces in bksomels.jpg
+ non-max suppression: 89 detections to 20 final bounding boxes
+Detecting faces in blues-double.jpg
+ non-max suppression: 99 detections to 25 final bounding boxes
+Detecting faces in board.jpg
+ non-max suppression: 65 detections to 20 final bounding boxes
+Detecting faces in boat.jpg
+ non-max suppression: 210 detections to 72 final bounding boxes
+Detecting faces in book.jpg
+ non-max suppression: 37 detections to 16 final bounding boxes
+Detecting faces in brian.jpg
+ non-max suppression: 15 detections to 2 final bounding boxes
+Detecting faces in bttf206.jpg
+ non-max suppression: 117 detections to 29 final bounding boxes
+Detecting faces in bttf301.jpg
+ non-max suppression: 137 detections to 30 final bounding boxes
+Detecting faces in bwolen.jpg
+ non-max suppression: 0 detections to 0 final bounding boxes
+Detecting faces in cards-perp-sml.jpg
+ non-max suppression: 70 detections to 20 final bounding boxes
+Detecting faces in cfb.jpg
+ non-max suppression: 22 detections to 1 final bounding boxes
+Detecting faces in churchill-downs.jpg
+ non-max suppression: 44 detections to 25 final bounding boxes
+Detecting faces in clapton.jpg
+ non-max suppression: 38 detections to 8 final bounding boxes
+Detecting faces in class57.jpg
+ non-max suppression: 1249 detections to 252 final bounding boxes
+Detecting faces in cluttered-tahoe.jpg
+ non-max suppression: 19 detections to 13 final bounding boxes
+Detecting faces in cnn1085.jpg
+ non-max suppression: 43 detections to 9 final bounding boxes
+Detecting faces in cnn1160.jpg
+ non-max suppression: 79 detections to 18 final bounding boxes
+Detecting faces in cnn1260.jpg
+ non-max suppression: 57 detections to 9 final bounding boxes
+Detecting faces in cnn1630.jpg
+ non-max suppression: 91 detections to 12 final bounding boxes
+Detecting faces in cnn1714.jpg
+ non-max suppression: 55 detections to 7 final bounding boxes
+Detecting faces in cnn2020.jpg
+ non-max suppression: 155 detections to 13 final bounding boxes
+Detecting faces in cnn2221.jpg
+ non-max suppression: 34 detections to 8 final bounding boxes
+Detecting faces in cnn2600.jpg
+ non-max suppression: 37 detections to 7 final bounding boxes
+Detecting faces in cpd.jpg
+ non-max suppression: 224 detections to 34 final bounding boxes
+Detecting faces in crimson.jpg
+ non-max suppression: 487 detections to 98 final bounding boxes
+Detecting faces in divinci-man1.jpg
+ non-max suppression: 115 detections to 53 final bounding boxes
+Detecting faces in ds9.jpg
+ non-max suppression: 117 detections to 19 final bounding boxes
+Detecting faces in er.jpg
+ non-max suppression: 262 detections to 61 final bounding boxes
+Detecting faces in eugene.jpg
+ non-max suppression: 78 detections to 8 final bounding boxes
+Detecting faces in ew-courtney-david.jpg
+ non-max suppression: 120 detections to 16 final bounding boxes
+Detecting faces in ew-friends.jpg
+ non-max suppression: 165 detections to 33 final bounding boxes
+Detecting faces in fleetwood-mac.jpg
+ non-max suppression: 53 detections to 24 final bounding boxes
+Detecting faces in frisbee.jpg
+ non-max suppression: 101 detections to 19 final bounding boxes
+Detecting faces in giant-panda.jpg
+ non-max suppression: 104 detections to 43 final bounding boxes
+Detecting faces in gigi.jpg
+ non-max suppression: 69 detections to 17 final bounding boxes
+Detecting faces in gpripe.jpg
+ non-max suppression: 16 detections to 3 final bounding boxes
+Detecting faces in harvard.jpg
+ non-max suppression: 60 detections to 25 final bounding boxes
+Detecting faces in hendrix1-bigger.jpg
+ non-max suppression: 846 detections to 108 final bounding boxes
+Detecting faces in hendrix2.jpg
+ non-max suppression: 12 detections to 2 final bounding boxes
+Detecting faces in henry.jpg
+ non-max suppression: 214 detections to 39 final bounding boxes
+Detecting faces in herbie-hancock.jpg
+ non-max suppression: 309 detections to 73 final bounding boxes
+Detecting faces in jackson.jpg
+ non-max suppression: 502 detections to 53 final bounding boxes
+Detecting faces in john.coltrane.jpg
+ non-max suppression: 40 detections to 12 final bounding boxes
+Detecting faces in judybats.jpg
+ non-max suppression: 357 detections to 65 final bounding boxes
+Detecting faces in kaari-stef.jpg
+ non-max suppression: 119 detections to 17 final bounding boxes
+Detecting faces in kaari1.jpg
+ non-max suppression: 123 detections to 21 final bounding boxes
+Detecting faces in kaari2.jpg
+ non-max suppression: 134 detections to 26 final bounding boxes
+Detecting faces in karen-and-rob.jpg
+ non-max suppression: 103 detections to 31 final bounding boxes
+Detecting faces in knex0.jpg
+ non-max suppression: 44 detections to 8 final bounding boxes
+Detecting faces in knex20.jpg
+ non-max suppression: 49 detections to 8 final bounding boxes
+Detecting faces in knex37.jpg
+ non-max suppression: 59 detections to 10 final bounding boxes
+Detecting faces in knex42.jpg
+ non-max suppression: 28 detections to 18 final bounding boxes
+Detecting faces in kymberly.jpg
+ non-max suppression: 4 detections to 1 final bounding boxes
+Detecting faces in lacrosse.jpg
+ non-max suppression: 19 detections to 5 final bounding boxes
+Detecting faces in larroquette.jpg
+ non-max suppression: 236 detections to 54 final bounding boxes
+Detecting faces in lawoman.jpg
+ non-max suppression: 184 detections to 28 final bounding boxes
+Detecting faces in life-cover.jpg
+ non-max suppression: 455 detections to 101 final bounding boxes
+Detecting faces in life-dreams.jpg
+ non-max suppression: 248 detections to 89 final bounding boxes
+Detecting faces in life2100.jpg
+ non-max suppression: 35 detections to 15 final bounding boxes
+Detecting faces in life7422.jpg
+ non-max suppression: 42 detections to 16 final bounding boxes
+Detecting faces in madaboutyou.jpg
+ non-max suppression: 188 detections to 59 final bounding boxes
+Detecting faces in married.jpg
+ non-max suppression: 93 detections to 15 final bounding boxes
+Detecting faces in me.jpg
+ non-max suppression: 51 detections to 7 final bounding boxes
+Detecting faces in mickymouse-self-p.jpg
+ non-max suppression: 729 detections to 135 final bounding boxes
+Detecting faces in mom-baby.jpg
+ non-max suppression: 59 detections to 12 final bounding boxes
+Detecting faces in mona-lisa.jpg
+ non-max suppression: 189 detections to 32 final bounding boxes
+Detecting faces in music-groups-double.jpg
+ non-max suppression: 203 detections to 33 final bounding boxes
+Detecting faces in natalie1.jpg
+ non-max suppression: 277 detections to 46 final bounding boxes
+Detecting faces in nens.jpg
+ non-max suppression: 91 detections to 20 final bounding boxes
+Detecting faces in newsradio.jpg
+ non-max suppression: 382 detections to 49 final bounding boxes
+Detecting faces in next.jpg
+ non-max suppression: 152 detections to 25 final bounding boxes
+Detecting faces in oksana1.jpg
+ non-max suppression: 79 detections to 23 final bounding boxes
+Detecting faces in original1.jpg
+ non-max suppression: 107 detections to 29 final bounding boxes
+Detecting faces in original2.jpg
+ non-max suppression: 214 detections to 49 final bounding boxes
+Detecting faces in our-cards.jpg
+ non-max suppression: 636 detections to 154 final bounding boxes
+Detecting faces in pace-university-double.jpg
+ non-max suppression: 204 detections to 64 final bounding boxes
+Detecting faces in patio.jpg
+ non-max suppression: 57 detections to 11 final bounding boxes
+Detecting faces in people.jpg
+ non-max suppression: 433 detections to 73 final bounding boxes
+Detecting faces in pittsburgh-park.jpg
+ non-max suppression: 19 detections to 8 final bounding boxes
+Detecting faces in plays.jpg
+ non-max suppression: 184 detections to 50 final bounding boxes
+Detecting faces in police.jpg
+ non-max suppression: 474 detections to 78 final bounding boxes
+Detecting faces in puneet.jpg
+ non-max suppression: 397 detections to 60 final bounding boxes
+Detecting faces in rehg-thanksgiving-1994.jpg
+ non-max suppression: 188 detections to 43 final bounding boxes
+Detecting faces in sarah4.jpg
+ non-max suppression: 155 detections to 22 final bounding boxes
+Detecting faces in sarah_live_2.jpg
+ non-max suppression: 211 detections to 36 final bounding boxes
+Detecting faces in seinfeld.jpg
+ non-max suppression: 205 detections to 45 final bounding boxes
+Detecting faces in shumeet.jpg
+ non-max suppression: 62 detections to 10 final bounding boxes
+Detecting faces in soccer.jpg
+ non-max suppression: 384 detections to 76 final bounding boxes
+Detecting faces in speed.jpg
+ non-max suppression: 15 detections to 1 final bounding boxes
+Detecting faces in tahoe-and-rich.jpg
+ non-max suppression: 9 detections to 8 final bounding boxes
+Detecting faces in tammy.jpg
+ non-max suppression: 87 detections to 10 final bounding boxes
+Detecting faces in tommyrw.jpg
+ non-max suppression: 24 detections to 14 final bounding boxes
+Detecting faces in tori-crucify.jpg
+ non-max suppression: 237 detections to 29 final bounding boxes
+Detecting faces in tori-entweekly.jpg
+ non-max suppression: 97 detections to 27 final bounding boxes
+Detecting faces in tori-live3.jpg
+ non-max suppression: 90 detections to 15 final bounding boxes
+Detecting faces in torrance.jpg
+ non-max suppression: 31 detections to 7 final bounding boxes
+Detecting faces in tp-reza-girosi.jpg
+ non-max suppression: 26 detections to 11 final bounding boxes
+Detecting faces in tp.jpg
+ non-max suppression: 14 detections to 2 final bounding boxes
+Detecting faces in tree-roots.jpg
+ non-max suppression: 109 detections to 43 final bounding boxes
+Detecting faces in trek-trio.jpg
+ non-max suppression: 107 detections to 13 final bounding boxes
+Detecting faces in trekcolr.jpg
+ non-max suppression: 18 detections to 2 final bounding boxes
+Detecting faces in tress-photo-2.jpg
+ non-max suppression: 17 detections to 6 final bounding boxes
+Detecting faces in tress-photo.jpg
+ non-max suppression: 48 detections to 13 final bounding boxes
+Detecting faces in u2-cover.jpg
+ non-max suppression: 31 detections to 13 final bounding boxes
+Detecting faces in uprooted-tree.jpg
+ non-max suppression: 81 detections to 40 final bounding boxes
+Detecting faces in voyager.jpg
+ non-max suppression: 220 detections to 53 final bounding boxes
+Detecting faces in voyager2.jpg
+ non-max suppression: 316 detections to 56 final bounding boxes
+Detecting faces in wall.jpg
+ non-max suppression: 116 detections to 24 final bounding boxes
+Detecting faces in waynesworld2.jpg
+ non-max suppression: 139 detections to 24 final bounding boxes
+Detecting faces in window.jpg
+ non-max suppression: 26 detections to 5 final bounding boxes
+Detecting faces in wxm.jpg
+ non-max suppression: 8 detections to 1 final bounding boxes
+Detecting faces in yellow-pages.jpg
+ non-max suppression: 29 detections to 27 final bounding boxes
+Detecting faces in ysato.jpg
+ non-max suppression: 16 detections to 3 final bounding boxes
+press any key to continue with next image
+Operation terminated by user during visualize_detections_by_image (line 77)
+
+
+In proj5 (line 222)
+visualize_detections_by_image(bboxes, confidences, image_ids, tp, fp, test_scn_path, label_path)
+
+ 
+>> 
+>> 
