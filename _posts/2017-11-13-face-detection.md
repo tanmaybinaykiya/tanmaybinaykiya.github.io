@@ -87,21 +87,20 @@ The following was obtained as the best performance with the above pipeline. The 
 
 The following experiments were performed with a cell Size: 6 due to memory constraints
 
-| --------------------- | ------------- | ------- | ------------------------------------------------------------- | --------------------------------------------------------------- |
-| Negative Feature Size |	Accuracy    | Time(s) | AP Curve                                                      |  HoG Feature                                                    |
-| --------------------- | ------------- | ------- | ------------------------------------------------------------- | --------------------------------------------------------------- |
-| 5000	                | 86.3%	        | 16      | ![]({{ base }}/images/cv/proj5/rep_pos_6_neg_5k/AP_curve.jpg) | ![]({{ base }}/images/cv/proj5/rep_pos_6_neg_5k/hog_feature.jpg)| 
-| 10000	                | 86.3%	        | 4.5     | ![]({{ base }}/images/cv/proj5/rep_pos_6_neg_10k/AP_curve.jpg) | ![]({{ base }}/images/cv/proj5/rep_pos_6_neg_10k/hog_feature.jpg)| 
-| 50000	                | 85.3%	        | 13.55   | ![]({{ base }}/images/cv/proj5/rep_pos_6_neg_50k/AP_curve.jpg) | ![]({{ base }}/images/cv/proj5/rep_pos_6_neg_50k/hog_feature.jpg)| 
-| 100000	            | 86.2%	        | 24.99   | ![]({{ base }}/images/cv/proj5/rep_pos_6_neg_100k/AP_curve.jpg) | ![]({{ base }}/images/cv/proj5/rep_pos_6_neg_100k/hog_feature.jpg)| 
-| --------------------- | ------------- | ------- | ------------------------------------------------------------- | --------------------------------------------------------------- |
-
-
+| --------------------- | -------- | ------- | --------------------------------------------------------------- | ----------------------------------------------------------------- |
+| Negative Feature Size | Accuracy | Time(s) | AP Curve                                                        |  HoG Feature                                                      |
+| --------------------- | -------- | ------- | --------------------------------------------------------------- | ----------------------------------------------------------------- |
+| 5000	                | 86.3%	   | 16      | ![]({{ base }}/images/cv/proj5/rep_pos_6_neg_5k/AP_curve.jpg)   | ![]({{ base }}/images/cv/proj5/rep_pos_6_neg_5k/hog_feature.jpg)  | 
+| 10000	                | 86.3%	   | 4.5     | ![]({{ base }}/images/cv/proj5/rep_pos_6_neg_10k/AP_curve.jpg)  | ![]({{ base }}/images/cv/proj5/rep_pos_6_neg_10k/hog_feature.jpg) | 
+| 50000	                | 85.3%	   | 13.55   | ![]({{ base }}/images/cv/proj5/rep_pos_6_neg_50k/AP_curve.jpg)  | ![]({{ base }}/images/cv/proj5/rep_pos_6_neg_50k/hog_feature.jpg) | 
+| 100000	            | 86.2%	   | 24.99   | ![]({{ base }}/images/cv/proj5/rep_pos_6_neg_100k/AP_curve.jpg) | ![]({{ base }}/images/cv/proj5/rep_pos_6_neg_100k/hog_feature.jpg)| 
+| --------------------- | -------- | ------- | --------------------------------------------------------------- | ----------------------------------------------------------------- |
 
 ## Extra Credit
 
 ### Positive Training Data Augmentation
-For extra credit, I added more positive datasets from the Labeled Faces in the Wild Dataset
+
+For extra credit, I added more positive training images from the [Labeled Faces in the Wild Dataset](https://hal.inria.fr/inria-00321923/)
 
 The dataset was built for an image recognition task and contains images of world famous figures. These images were colored and not in the same resolution as the default provided dataset.
 
@@ -110,10 +109,8 @@ The dataset was built for an image recognition task and contains images of world
 The dataset was first resized and then converted to grayscale images, using [ImageMagick](https://www.imagemagick.org/script/index.php).
 
 ```sh
-
 # The following is for images with names starting with A. 
 convert "A*.jpg[36x]" -background "#fff" -gravity Center -extent 36x36 A_resized%07d.jpg
-
 convert "A_resized*"  -set colorspace Gray "A_recolored%07d.jpg"
 ```
 
@@ -121,16 +118,16 @@ convert "A_resized*"  -set colorspace Gray "A_recolored%07d.jpg"
 | ![]({{ base }}/images/cv/proj5/A_recolored000.jpg) | ![]({{ base }}/images/cv/proj5/A_recolored008.jpg) | ![]({{ base }}/images/cv/proj5/A_recolored1051.jpg) | ![]({{ base }}/images/cv/proj5/C_recolored842.jpg) |
 	
 ### Results
+
 The dataset was tested in the following two scenarios
 
-* Using it seperately as a positive dataset
+* Using only the LFW dataset as the positive training dataset
 * Using it in augmentation with the existing positive training set
 
 A cell size of 3 and a negative sample size of 10000 was used in the below tests AP curve and HoG descriptor for the above scenarios:
 
-| Only LFW | ![]({{ base }}/images/cv/proj5/rep_only_extra/AP_curve.jpg) | ![]({{ base }}/images/cv/proj5/rep_only_extra/AP_curve.jpg) |
-| Augmented LFW  | ![]({{ base }}/images/cv/proj5/rep_aug_extra/AP_curve.jpg) | ![]({{ base }}/images/cv/proj5/rep_aug_extra/AP_curve.jpg) | 
-
+| Only LFW | ![]({{ base }}/images/cv/proj5/rep_only_extra/AP_curve.jpg) | ![]({{ base }}/images/cv/proj5/rep_only_extra/hog_template.jpg) |
+| Augmented LFW  | ![]({{ base }}/images/cv/proj5/rep_aug_extra/AP_curve.jpg) | ![]({{ base }}/images/cv/proj5/rep_aug_extra/hog_feature.jpg) | 
 
 The extra dataset does not give comparable performance as compared to the provided dataset. When augmented with the existing positive dataset, the LFW dataset affects performance adversely bringing it down to **86.3%** from **92%**
 
