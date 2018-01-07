@@ -16,12 +16,14 @@ Machine Learning, Deep Learning, Computer Vision
 - Computer Vision
 - Computer Graphics 
 - Artificial Intelligence  
+- Machine Learning*
+- Natural Language*
 
 ## Education
 
 -  2009 - 2015: Master of Science(Hons.) Mathematics and Bachelor of Engineering (Hons.) Computer Science   
    Birla Institute of Technology And Science, Pilani Goa Campus  
-   CGPA:  7.85 / 10  
+   CGPA: 7.85 / 10  
 
 -  Aug 2017 (ongoing): Master of Science, Computer Science  
    Georgia Institute of Technology, Atlanta    
@@ -29,40 +31,54 @@ Machine Learning, Deep Learning, Computer Vision
 
 ## Academic Projects
 
-### Scene Classification with Deep Learning   
-Nov 2017  
-[Report](https://tanmaybinaykiya.github.io/scene-classification-with-deep-learning)   
-* Build a Convolutional Neural Network to classify scenes into categories  
-* Use Transfer learning from the VGG network to classify scenes on the SUN dataset   
+### Morse Code Recognition, Dec 2017  
+*	Implemented Morse code recognition system through the use of Hidden Markov Models
 
-### Surface Reconstruction from Point Cloud Data   
-Nov 2017   
-[Report](https://tanmaybinaykiya.github.io/tetrahedralization-of-3d-meshes)  |  [Project Source](https://github.com/tanmaybinaykiya/Surface-Reconstruction-from-Point-Cloud-Data) 
+### Scene Classification with Deep Learning, Nov 2017  
+[Report]({{ base }}/scene-classification-with-deep-learning)   
+* Built a Convolutional Neural Network to classify scenes into categories  
+* Used Transfer learning from the VGG network to classify scenes on the SUN dataset   
+
+### Surface Reconstruction from Point Cloud Data, Nov 2017   
+[Report]({{ base }}/tetrahedralization-of-3d-meshes) | [Project Source](https://github.com/tanmaybinaykiya/Surface-Reconstruction-from-Point-Cloud-Data) 
 * Water Tight Surface Reconstruction of 3D Point Cloud Data using the Ball Pivoting Algorithm   
 
-### Subdivision Surface Modeling of Polygonal Meshes    
-Jan 2013  
-Adviser: [Dr. L. Gudino](http://www.bits-pilani.ac.in/goa/lucy/profile)  
-[Project Source](https://github.com/tanmaybinaykiya/COP)   
-* Study of data structures used to describe polygon meshes, polygon subdivision conversion algorithms, and theoretical concepts of surface continuity  
-* Developed an application in C using the OpenGL API and implemented the Catmull-Clark and Doo-Sabin subdivision conversion algorithms  
+### Automatic Image Segmentation using Expectation Maximization, Nov 2017  
+*	Implemented automatic image segmentation using K-Means, Gaussian Mixture Models employing the Bayesian Information Criterion
 
-### Analysis of finite sets sampled from Euclidean space quasi-ordered by comparison relations  
-Jan 2014 - May 2014  
-Adviser: [Dr. Ramprasad Joshi](https://scholar.google.co.in/citations?user=2Sv-n_sAAAAJ)  
-* Study of embedding weighted graphs from Rn space to R3 space to help solve and visualize n-ary equations with n-variables  
-  
-###  HTTP Client using Socket Programming  
-April 2014  
-[Project source available here](https://github.com/tanmaybinaykiya/codebin/tree/master/CN/httpClient)  
+### Scene Recognition with Bag of Words, Oct 2017  
+[Report]({{ base }}/scene-recognition-with-bag-of-words)   
+*	Developed a scene recognition pipeline with Bag of SIFT and linear SVM classifier
+
+### Local Feature Matching, Sep 2017  
+*	Developed a local feature matching algorithm employing Harris Feature Point Detector and implemented the SIFT algorithm for local feature descriptor
+
+### Face Detection, Sep 2017  
+[Report]({{ base }}/face-detection)   
+*	Developed a local feature matching algorithm employing Harris Feature Point Detector and implemented the SIFT algorithm for local feature descriptor
+
+### Dead-end Isolation Game Player, Aug 2017  
+*	Developed a dead-end isolation game player based on Minimax Algorithm using Alpha-Beta pruning 
+
+###  HTTP Client using Socket Programming, April 2014  
+[Project source](https://github.com/tanmaybinaykiya/codebin/tree/master/CN/httpClient)  
 * Developed an HTTP Client using Socket Programming in C. This client was designed to GET an HTML page pointed to by the given HTTP URL and all its associated images. 
 * Additionally, the application, decoded images encoded using the base64 encoding technique and generated the equivalent PNG images 
 
-### Raytracer  
-August 2013   
-[Project source available here](https://github.com/tanmaybinaykiya/Raytracer)  
-* Implemented a Raytracer for lambert materials in C++ using OpenGL 2.0 API representing the polygonal mesh using a winged-edge data structure
-   
+### Analysis of finite sets sampled from Euclidean space quasi-ordered by comparison relations, Jan 2014 - May 2014  
+Adviser: [Dr. Ramprasad Joshi](https://scholar.google.co.in/citations?user=2Sv-n_sAAAAJ)  
+* Study of embedding weighted graphs from Rn space to R3 space to help solve and visualize n-ary equations with n-variables   
+
+### Raytracer, August 2013   
+[Project source](https://github.com/tanmaybinaykiya/Raytracer)  
+* Implemented a Raytracer for lambert materials in C++ using OpenGL 2.0 API representing the polygonal mesh using a winged-edge data structure   
+
+### Subdivision Surface Modeling of Polygonal Meshes, Jan 2013  
+Adviser: [Dr. L. Gudino](http://www.bits-pilani.ac.in/goa/lucy/profile)  
+[Project Source](https://github.com/tanmaybinaykiya/COP)   
+* Study of data structures used to describe polygon meshes, polygon subdivision conversion algorithms, and theoretical concepts of surface continuity  
+* Developed an application in C using the OpenGL API and implemented the Catmull-Clark and Doo-Sabin subdivision conversion algorithms 
+
 ## Work Experience
 
 ### BlueJeans Networks, Bangalore 
