@@ -3,7 +3,7 @@ layout:     post
 title:      Scene Recognition with Bag of Words
 date:       2017-10-28 17:10:28
 summary:    Scene Recognition pipeline based on Bag of Words as a feature descriptor
-categories: computer-vision 
+categories: computer-vision image-classification image-representation natural-scenes unsupervised-learning  learning-natural-scene-category training-set unsupervised-learning Animals Cities-and-towns Dictionaries Frequency Histograms Humans Layout Unsupervised-learning Vehicles knn k-nearest-neighbour matlab support-vector-machines bag-of-words
 tags:       project
 ---
 <center><img src="{{ base }}/images/cv/proj4/header.png" /><br>An example of a typical bag of words classification pipeline. Figure by <a href="http://www.robots.ox.ac.uk/~vgg/research/encoding_eval/">Chatfield et al.</a></center>
@@ -47,6 +47,13 @@ For each training image, SIFT vectors are computed at a fixed step size(Need not
 A histogram is computed for each image and this serves as the feature representation of the image. The histogram signifies the number of features of the image that are closest to each of the vocabulary features.
 
 _The algorithm performs better with lower step sizes but due to hardware constraints a step size of 4 with SIFT and 10 with SIFT + GIST was the lowest achievable_
+
+
+## Dataset Used
+
+We use the 15 scene dataset introduced in [Lazebnik et al. 2006](http://www.di.ens.fr/willow/pdfs/cvpr06b.pdf), although built on top of previously published datasets
+
+
 
 ## Regularization Parameter Tuning
 
@@ -335,4 +342,4 @@ Scene Classification Results Visualization
 ## References
 
 1 [Oliva, A. & Torralba, A. International Journal of Computer Vision (2001) 42: 145.](https://doi.org/10.1023/A:1011139631724)
-
+2 [L. Fei-Fei and P. Perona, "A Bayesian hierarchical model for learning natural scene categories," 2005 IEEE Computer Society Conference on Computer Vision and Pattern Recognition (CVPR'05), 2005, pp. 524-531 vol. 2.](http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=1467486&isnumber=31473)
