@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      Very Deep Convolutional Networks for Text Classification 
-date:       2017-12-22 14:12:22
+date:       2018-01-23 04:18:25
 summary:    Very Deep Convolutional Networks for Text Classification 
 categories: natural-language machine-learning deep-learning text-processing text-classification neural-nets convolutional-neural-networks vgg sentiment-analysis topic-classification 
 tags:       paper-summary blogpost
