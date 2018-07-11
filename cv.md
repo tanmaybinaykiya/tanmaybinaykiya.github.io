@@ -13,21 +13,21 @@ Machine Learning, Deep Learning, Computer Vision
 
 ## Graduate Courses 
 
+- Natural Language
+- Adv. Computer Vision*
+- Artificial Intelligence  
 - Computer Vision
 - Computer Graphics 
-- Artificial Intelligence  
-- Machine Learning*
-- Natural Language*
 
 ## Education
+
+-  Aug 2017 - Present: Master of Science, Computer Science  
+   Georgia Institute of Technology, Atlanta    
+   CGPA: 4.0 / 4.0 
 
 -  2009 - 2015: Master of Science(Hons.) Mathematics and Bachelor of Engineering (Hons.) Computer Science   
    Birla Institute of Technology And Science, Pilani Goa Campus  
    CGPA: 7.85 / 10  
-
--  Aug 2017 (ongoing): Master of Science, Computer Science  
-   Georgia Institute of Technology, Atlanta    
-   CGPA: 4.0 / 4.0 
 
 ## Academic Projects
 
@@ -81,12 +81,25 @@ Adviser: [Dr. L. Gudino](http://www.bits-pilani.ac.in/goa/lucy/profile)
 
 ## Work Experience
 
+### Uber Technologies, California
+Software Engineer Intern
+May 2018 - July 2018
+
+#### CatchME (Catch Map Errors)
+##### Technologies Used: Apache Spark, Java
+ * Prototyped Hidden Markov Model-based techniques to find Map errors using drivers' GPS traces
+
+#### MapCrunch Reliability
+##### Technologies Used: Apache Spark, Java, Docker, Graphite
+ * Built spark-based tools for Map Reliability
+ * Improved existing pipeline performance by optimizing Spark usage
+
 ### BlueJeans Networks, Bangalore 
 Senior Software Developer, Core Platform Team   
 May 2015 - Jul 2017   
 
 #### Next Generation Platform  
-##### Technologies Used: Java, NodeJS, SpringBoot, Hystrix, Ribbon, OkHttp, NGINX, Feign, Graphana, Docker, Wowza Streaming Engine, AWS DynamoDB
+##### Technologies Used: Java, NodeJS, Spring-Boot, Hystrix, Ribbon, OkHttp, NGINX, Feign, Graphana, Docker, Wowza Streaming Engine, AWS DynamoDB
   * Re-engineered the application design to enable a pure micro-service architecture  
   * Refactored the existing monolithic backend codebase to facilitate deployments as microservices, involving migration of the Google Guice based framework to Spring Boot
   * Migrated the existing technology stack to Amazon Web Services Cloud.   
