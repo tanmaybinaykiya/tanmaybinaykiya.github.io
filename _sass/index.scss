@@ -19,9 +19,10 @@
 }
 
 .affiliation { 
-    border: 1px solid $lighter-gray; 
+    // border: 1px solid $lighter-gray; 
     margin-right: 10px; 
     float:left;
+    padding: 10px;
 }
 
 .affiliation a span {
@@ -32,7 +33,9 @@
 
 .affiliation a img {
     display:block;    
-    width: 150px;
+    max-width: 150px;
     height: 150px;
     margin: 0 auto;
+    margin-bottom: 5px;
+
 }
