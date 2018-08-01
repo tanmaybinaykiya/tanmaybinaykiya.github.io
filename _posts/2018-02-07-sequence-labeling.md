@@ -1,18 +1,15 @@
 ---
 layout:     post
 title:      Sequence Labeling
-date:       2017-12-22 14:12:22
-summary:    Scene Classification with Deep Learning
+date:       2018-04-18 18:04:18
+summary:    Sequence Labeling is the task of assigning labels to each token in a sequence. A common application of sequence labelling is Part of Speech tagging - assigning parts of speech to each word in a sentence. In this project we iterate through multiple methods, eventually building a state-of-the-art model for the task using Deep Learning
 categories: natural-language machine-learning deep-learning sequence-labelling neural-nets recurrent-neural-networks long-short-term-memory-network lstm pos-tag part-of-speech tagging computational-modeling data-models Neural-networks Training viterbi hidden-markov-model georgia-tech gatech 
-tags:       blogpost
+cover-image: 
 ---
 
-# Sequence Labeling
+<!-- > This project was completed as part of the course requirements of [CS 7650 Natural Language](https://github.com/jacobeisenstein/gt-nlp-class) under [Prof. Jacob Eisenstein](https://www.cc.gatech.edu/~jeisenst/)   -->
 
-> This project was completed as part of the course requirements of [CS 7650 Natural Language](https://github.com/jacobeisenstein/gt-nlp-class) under [Prof. Jacob Eisenstein](https://www.cc.gatech.edu/~jeisenst/)  
-
-Sequence Labeling is the task of assigning tags to each token in a sequence. The tokens and tags can be absolutely anything.  
-A common application of sequence labelling is Part of Speech tagging - assigning parts of speech to each word in a sentence. 
+Sequence Labeling is the task of assigning tags to each token in a sequence. The tokens and tags can be absolutely anything. A common application of sequence labelling is Part of Speech tagging - assigning parts of speech to each word in a sentence. 
 
 ## Sequence labeling as classification
 

@@ -11,7 +11,6 @@ type:
 
 date_format: "%b %-d, %Y"
 header_pages:
- - projects.html
  - posts.html
  - cv.md
  - contact.html
@@ -24,16 +23,16 @@ google_analytics: UA-111740605-1
 # Optional features
 
 # allow indexing, follow links, no archive
-meta_robots: index,follow,noarchive
+meta_robots: index,follow
 
-animated:             false
-show_related_posts:   false
+animated:             true
+show_related_posts:   true
 show_post_footers:    false
 show_social_icons:    true
 ajaxify_contact_form: false
 enable_mathjax: true
-extended_fonts: false
-enable_anchorjs: true
+extended_fonts: true
+enable_anchorjs: false
 
 # Preview image for social media aka og:image and twitter:image
 post_preview_image: true
@@ -111,7 +110,7 @@ text:
     coming_soon: 'Coming soon...'
   contact:
     email:    'Enter your email id here...'
-    content:  'Hi'
+    content:  'Say Hi!'
     subject:  'New submission!'
     submit:   'Say Hello'
     ajax:
@@ -130,7 +129,7 @@ paginate:     4
 paginate_path: "/projects/page:num/"
 sass:
   style: compressed
-gems:
+plugins:
   - jekyll-seo-tag
   - jekyll-paginate
   - jekyll-sitemap

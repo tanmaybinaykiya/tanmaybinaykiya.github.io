@@ -2,9 +2,9 @@
 layout:     post
 title:      Surface Reconstruction from Point Cloud Data
 date:       2017-11-28 17:11:28
-tags:       project
 summary:    Water Tight Surface Reconstruction of 3D Point Cloud Data using the Ball Pivoting Algorithm
 categories: computer-graphics 3d-modeling point-cloud delaunay-triangulation ball-pivoting-algorithm  computational-geometry image-reconstruction mesh-generation seed-triangle surface-reconstruction surface-samples triangle-mesh data-acquisition geometrical-optics image-reconstruction sampling-methods shape surface-reconstruction three-dimensional-displays computational-complexity data-compression graph-theory topology edgebreaker spirale-Reversi arbitrary-topology compression decompression orientable-manifold-surfaces data-structures geometry image-reconstruction performance-evaluation surgery topology transform-coding
+cover-image: /images/cg/6491-p5/res2-5.png
 ---
 
 > This is the project report compiled by Sajid Anwar and Tanmay Binaykiya as part of the course requirements of [CS 6491 Computer Graphics](https://www.cc.gatech.edu/~jarek/6491/) under [Prof. Jaroslav Rossignac](https://www.cc.gatech.edu/~jarek/)

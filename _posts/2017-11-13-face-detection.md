@@ -2,9 +2,9 @@
 layout:     post
 title:      Face Detection
 date:       2017-11-13 17:11:13
-summary:    Face Detection based on Dalal & Triggs' method for pedestrian detection
+summary:    Face Detection based on Dalal & Triggs' method of Histogram of Gradient descriptors for Pedestrian Detection
 categories: computer-vision dalal-triggs sliding-window histogram-of-gradients hog face-detection lfw labelled-faces-in-the-wild negative data-augmentation 
-tags:       project
+cover-image: /images/cv/proj5/detections_4476_2017_class_easy.jpg.png
 ---
 
 <center><img src="{{ base }}/images/cv/proj5/detections_4476_2017_class_easy.jpg.png" /></center>

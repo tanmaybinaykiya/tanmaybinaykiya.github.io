@@ -1,7 +1,7 @@
 ---
 layout: default
-permalink: /cv/
-title: CV
+permalink: /resume/
+title: Resume
 ---
 
 ## Summary
@@ -30,6 +30,18 @@ Machine Learning, Deep Learning, Computer Vision
    CGPA: 7.85 / 10  
 
 ## Academic Projects
+
+### Text Classification, Feb 2018
+
+
+
+### Sequence Labeling, Mar 2018
+
+
+### Dependency Parsing, Apr 2018
+
+### Coreference Resolution, Apr 2018
+
 
 ### Morse Code Recognition, Dec 2017  
 *	Implemented Morse code recognition system through the use of Hidden Markov Models

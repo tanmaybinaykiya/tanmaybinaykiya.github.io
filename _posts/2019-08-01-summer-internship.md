@@ -1,10 +1,10 @@
 ---
 layout:     post
-title:      Raytracer
-date:       2013-09-02 13:09:02
-summary:    OpenGL/C++ based Raytracer program
-categories: computer-graphics rendering raytracer
-cover-image: /images/cg/raytracer/second.png
+title:      Bluejeans Networks
+date:       2018-08-01 18:08:01
+summary:    I worked at Bluejeans Networks in the capacity of 
+categories: summer-internship uber uber-technologies maps 
+cover-image: 
 ---
 
 I have been working on this project for a while now. I got my first positive results yesterday. 

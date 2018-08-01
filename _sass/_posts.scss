@@ -8,16 +8,42 @@
   border-bottom: thin solid #f3f3f3;
 }
 
+.post-block {
+clear: both;
+float: left;
+}
+
+.post-block .post-cover{
+  float: left;
+  width: 10rem;
+  height: 7.5rem;
+  margin-right: 1rem;
+  border: 1px solid #333;
+  background-size: 200px auto;
+  background-repeat: no-repeat;
+  background-size: contain; 
+  background-position: center;
+}
+
+.post-details {
+  float: left;
+  margin-top:10px;
+  width: 46rem;
+}
+
 .posts .post:last-child {
   border-bottom: none;
-  margin-bottom: .375em;
-  padding-bottom: 0;
 }
 
 .post-link .post-title {
   margin-top: 0;
-  font-weight: 600;
+  // font-weight: 600;
   color: #333;
+}
+
+.post-summary {
+  color: #777;
+  font-weight: 200;
 }
 
 .post-footer {

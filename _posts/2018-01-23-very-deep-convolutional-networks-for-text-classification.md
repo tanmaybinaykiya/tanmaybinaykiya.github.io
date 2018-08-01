@@ -1,10 +1,9 @@
 ---
 layout:     post
-title:      Very Deep Convolutional Networks for Text Classification 
+title:      'Paper Summary: Very Deep Convolutional Networks for Text Classification' 
 date:       2018-01-23 04:18:25
-summary:    Very Deep Convolutional Networks for Text Classification 
+summary:    Paper Summary of Very Deep Convolutional Networks for Text Classification - Lecun et al
 categories: natural-language machine-learning deep-learning text-processing text-classification neural-nets convolutional-neural-networks vgg sentiment-analysis topic-classification 
-tags:       paper-summary blogpost
 ---
 
 Alexis Conneau; Holger Schwenk; Loïc Barrault; Yann Lecun  

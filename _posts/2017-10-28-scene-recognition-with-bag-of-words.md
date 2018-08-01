@@ -1,10 +1,10 @@
 ---
 layout:     post
-title:      Scene Recognition with Bag of Words
+title:      Scene Recognition
 date:       2017-10-28 17:10:28
-summary:    Scene Recognition pipeline based on Bag of Words as a feature descriptor
+summary:    Scene Recognition pipeline based on Bag of Words as a feature descriptor. We experiment with multiple features and models for the classification task
 categories: computer-vision image-classification image-representation natural-scenes unsupervised-learning  learning-natural-scene-category training-set unsupervised-learning Animals Cities-and-towns Dictionaries Frequency Histograms Humans Layout Unsupervised-learning Vehicles knn k-nearest-neighbour matlab support-vector-machines bag-of-words
-tags:       project
+cover-image: /images/cv/proj4/header.png
 ---
 <center><img src="{{ base }}/images/cv/proj4/header.png" /><br>An example of a typical bag of words classification pipeline. Figure by <a href="http://www.robots.ox.ac.uk/~vgg/research/encoding_eval/">Chatfield et al.</a></center>
 
