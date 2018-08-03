@@ -10,7 +10,7 @@
 }
 #index-wrapper section h1 {
     margin-top:0; 
-    border-bottom: 1px solid #000;
+    // border-bottom: 1px solid #000;
 }
 
 .affiliations {
@@ -19,13 +19,12 @@
 }
 
 .affiliation { 
-    // border: 1px solid $lighter-gray; 
-    margin-right: 10px; 
+    margin: 0 10px 0 0; 
     float:left;
     padding: 10px;
 }
 
-.affiliation a span {
+.affiliation a figcaption {
     display: block; 
     text-align:center;
     text-decoration: none;
@@ -33,9 +32,7 @@
 
 .affiliation a img {
     display:block;    
-    max-width: 150px;
-    height: 150px;
+    height: 80px;
     margin: 0 auto;
     margin-bottom: 5px;
-
 }

@@ -41,7 +41,11 @@ The method was patented by Robert K. McConnell of Wayland Research Inc. in 1986 
 
 _A detailed step by step implementation guide can be found [here](https://www.learnopencv.com/histogram-of-oriented-gradients/)_
 
-<center><img src="{{ base }}/images/cv/proj5/hog_features_dalal_triggs.jpg" /><br>Standard HOG features with a cell size of eight pixels.<br>Image courtesy of <a href="http://www.vlfeat.org/overview/hog.html">Vlfeat</a>
+<center>
+<figure>
+<img src="{{ base }}/images/cv/proj5/hog_features_dalal_triggs.jpg" />
+<figcaption>Standard HOG features with a cell size of eight pixels.<br/>Image courtesy of <a href="http://www.vlfeat.org/overview/hog.html">Vlfeat</a></figcaption>
+</figure>
 </center>
 
 In our case, we use the [Vlfeat implementation](http://www.vlfeat.org/matlab/vl_hog.html) of HoG which uses the Felzenszwalb implementation which is a 31 dimension vector instead of 36. The Felzenszwalb implementation computes both, the directed and undirected gradients as well as four dimensional testure-energy feature, but projects them on a 31 dimensional feature vector.

@@ -12,11 +12,32 @@ layout: default
         </span>
         <br><br><span>I completed my Bachelors(Hons.) in Computer Science and Masters(Hons.) in Mathematics from Birla Institute of Technology & Science, Pilani</span>
         <div class="affiliations">
-        <div class="affiliation"><a href="https://www.bits-pilani.org"><img src="/images/me.jpeg" /><span>BITS Pilani</span></a></div>
-        <div class="affiliation"><a href="https://www.bluejeans.com"><img src="/images/me.jpeg" /><span>Bluejeans Networks</span></a></div>
-        <div class="affiliation"><a href="https://www.gatech.edu"><img src="/images/me.jpeg" ><span >Georgia Tech</span></a></div>
-        <div class="affiliation"><a href="https://www.uber.com"><img src="/images/me.jpeg" /><span>Uber</span></a></div>
+            <figure class="affiliation">
+                <a href="https://www.bits-pilani.org">
+                    <img src="/images/index/bits.png" />
+                    <figcaption>BITS Pilani</figcaption>
+                </a>
+            </figure>
+            <figure class="affiliation">
+                <a href="https://www.bluejeans.com">
+                    <img src="/images/index/bjn.png" />
+                    <figcaption>Bluejeans Networks</figcaption>
+                </a>
+            </figure>
+            <figure class="affiliation">
+                <a href="https://www.gatech.edu">
+                    <img src="/images/index/gatech.png" >
+                    <figcaption >Georgia Tech</figcaption>
+                </a>
+            </figure>
+            <figure class="affiliation">
+                <a href="https://www.uber.com">
+                    <img src="/images/index/uber.png" />
+                    <figcaption>Uber</figcaption>
+                </a>
+            </figure>
         </div>
     </section>
-
 </div>
+
+

@@ -61,13 +61,13 @@ blockquote {
   margin-bottom: $space-1;
   margin-left: 0;
   padding-left: $space-1;
-  padding-right: $space-1;
+  // padding-right: $space-1;
 }
 
 blockquote,
 blockquote p {
   font-size: $h4;
-  font-style: italic;
+  // font-style: italic;
 }
 
 h1,

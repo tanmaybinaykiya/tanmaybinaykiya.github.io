@@ -1,5 +1,10 @@
 html {
   font-size: $base-font-size;
+  text-align: justify;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $title-font-family;
 }
 
 abbr {
@@ -7,9 +12,13 @@ abbr {
   cursor: help;
 }
 
+p, span {
+
+}
+
 p {
   color: #333;
-  line-height: 1.2;
+  line-height: 1.5;
 }
 
 small, .small {
@@ -26,10 +35,6 @@ a {
   padding-bottom: 0.15em;
 }
 
-h2 {
-  border-bottom: 1px solid #000;
-}
-
 .post-title {
   border-bottom: 0; 
 }
@@ -42,3 +47,6 @@ h2 {
   border-bottom: 1px solid;
 }
 
+.MathJax {
+  font-size: 1em;
+  }
