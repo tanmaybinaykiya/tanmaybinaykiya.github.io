@@ -10,7 +10,7 @@ layout: default
         I am pursuing my Masters of Science in Computer Science at Georgia Institute of Technology, Atlanta with a focus in Machine Learning in Natural Language and Computer Vision. 
         Before joining Tech, I worked at BlueJeans Networks as a Senior Software Developer.
         </span>
-        <br><br><span>I completed my Bachelors(Hons.) in Computer Science and Masters(Hons.) in Mathematics from Birla Institute of Technology & Science, Pilani</span>
+        <br><br><span>I completed my Bachelors(Hons.) of Engineering in Computer Science and Masters(Hons.) of Science in Mathematics from Birla Institute of Technology & Science, Pilani</span>
         <div class="affiliations">
             <figure class="affiliation">
                 <a href="https://www.bits-pilani.org">
