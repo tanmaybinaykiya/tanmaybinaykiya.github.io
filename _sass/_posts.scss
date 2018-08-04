@@ -28,7 +28,7 @@ float: left;
 .post-details {
   float: left;
   margin-top:10px;
-  width: 46rem;
+  width: 36rem;
 }
 
 .posts .post:last-child {
@@ -71,4 +71,21 @@ float: left;
 
 .related-post-title {
   border-bottom: thin solid #f3f3f3;
+}
+
+figure {
+  margin: 0 auto;
+  display: table;
+  border: 1px solid #999;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+figcaption {
+  border-top: 1px solid #999;
+}
+
+figure > img {
+  margin: 0 auto;
+  display: block;
 }

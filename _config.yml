@@ -11,7 +11,7 @@ type:
 
 date_format: "%b %-d, %Y"
 header_pages:
- - posts.html
+ - articles.html
  - cv.md
  - contact.html
  
@@ -133,6 +133,7 @@ plugins:
   - jekyll-seo-tag
   - jekyll-paginate
   - jekyll-sitemap
+  - jekyll-gist
 # https://github.com/jekyll/jekyll/issues/2938
 exclude:
   - Gemfile

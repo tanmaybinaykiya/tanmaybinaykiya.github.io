@@ -1,15 +1,17 @@
 ---
 layout:     post
-title:      Sequence Labeling
+title:      Sequence labelling
 date:       2018-04-18 18:04:18
-summary:    Sequence Labeling is the task of assigning labels to each token in a sequence. A common application of sequence labeling is Part of Speech tagging - assigning parts of speech to each word in a sentence. In this project we iterate through multiple methods, eventually building a state-of-the-art model for the task using Deep Learning
+summary:    Sequence labelling is the task of assigning labels to each token in a sequence. A common application of sequence labelling is Part of Speech tagging - assigning parts of speech to each word in a sentence. In this project we iterate through multiple methods, eventually building a state-of-the-art model for the task using Deep Learning
 categories: natural-language machine-learning deep-learning sequence-labelling neural-nets recurrent-neural-networks long-short-term-memory-network lstm pos-tag part-of-speech tagging computational-modeling data-models Neural-networks Training viterbi hidden-markov-model georgia-tech gatech 
 cover-image: /images/nlp/seq-labeling/cover.png
 ---
 
-Sequence Labeling is the task of assigning tags to each token in a sequence. The tokens and tags can be absolutely anything. A common application of sequence labelling is Part of Speech tagging - assigning parts of speech to each word in a sentence. 
+<figure><img style="width:100%" src="{{base}}/images/nlp/seq-labeling/cover.png"/></figure>
 
-## Sequence labeling as a classification problem
+Sequence labelling is the task of assigning tags to each token in a sequence. The tokens and tags can be absolutely anything. A common application of sequence labelling is Part of Speech tagging - assigning parts of speech to each word in a sentence. 
+
+## Sequence labelling as a classification problem
 
 > ### Classification  
 <br/> Classification is the task of assigning labels to your input and finds applications in all realms of Machine Learning.   
@@ -20,7 +22,7 @@ We next need a weight function $$ g(y) $$ that is a function of the feature func
 <br/>For computational tractablity, the feature function $$ f(x) $$ is often defined such that it returns a matrix and the $$ g(y) $$ is the inner product of a weight matrix $$ \theta $$ with the feature matrix. The product of this composition gives a confidence score of the classification that we made.
 <br/><center>$$ score = \theta \cdot f(x) $$ </center>
 
-Sequence labeling can be modeled as a classification problem, where each tag is a class that you want to classify each token into.   
+Sequence labelling can be modeled as a classification problem, where each tag is a class that you want to classify each token into.   
 We write the feature function $$ f ((\overline{w}, m), y) $$ to indicate the feature function for applying tag y (the label) to word $$ w_m $$ in the sequence $$ w_1, w_2, \ldots, w_M $$    
   
 How to build such a feature function?   
@@ -48,9 +50,9 @@ Grammatically, the word *the* is a DETERMINER.
 When you read the sentence, what part of speech did you first assign to old? Typically, this word is an ADJECTIVE — abbreviated as J — which is a class of words that modify nouns.  
 Similarly, man is usually a NOUN. The resulting sequence of tags is D J N D N. But this is a mistaken “garden path” interpretation, which ends up leading nowhere.  
 It is unlikely that a DETERMINER would directly follow a NOUN and particularly unlikely that the entire sentence would lack a verb. The only possible VERB in the sentence is the word man, which can refer to the act of maintaining and piloting something — often boats. But if man is tagged as a VERB, then old is seated between a DETERMINER and a VERB, and must be a NOUN. And indeed, ADJECTIVEs can often have a second interpretation as NOUNs when used in this way (e.g., the young, the restless).  
-This reasoning, in which the labeling decisions are intertwined, cannot be applied in a setting where each tag is produced by an independent classification decision. 
+This reasoning, in which the labelling decisions are intertwined, cannot be applied in a setting where each tag is produced by an independent classification decision. 
 
-## Sequence labeling as structure prediction 
+## Sequence labelling as structure prediction 
 *The entire sequence of tags as a label itself*
 
 In stead of making a classifiction decision for each token, we now make a decision for the entire sentence.  
@@ -65,8 +67,15 @@ $${y}_{1:M}$$ is a sequence of M tags
 
 Note that in this formulation, we have a feature function that consider the entire tag sequence $$ y_m $$ . Such a feature function can therefore include features that capture the relationships between tagging decisions, such as the preference that determiners not follow nouns, or that all sentences have verbs. 
 
+## Tractability
 
+POS tag sets range from 10 to few hundreds. For a sequence length of 20, the permutations of tag sequences of length 20 is  for a POS set of 10. Enumerating and scoring each sequence is hence intractable.
 
+However, the situation changes when we restrict the feature function. Suppose we choose features that never consider more than one tag 
+
+$$ f(\underline{w},\underline{y}) =  \sum_{m=1}^{M} f(\underline{w},y_m,m) $$
+
+<!-- {% gist 5997ae8cd51f160b80c0debcf4ade94a %} -->
 
 ## References
 

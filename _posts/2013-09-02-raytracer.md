@@ -18,15 +18,15 @@ The importer uses the [winged-edge data structure](https://pages.mtu.edu/~shene/
 
 The following is the BSOD as mentioned in the first screen.
 
-![]({{base}}/images/cg/raytracer/zero.png)
+<figure> <img src="/images/cg/raytracer/zero.png"/> </figure>
 
 The following output is the intersection map of the rays with the objects.
 
-![]({{base}}/images/cg/raytracer/first.png)
+<figure> <img src="/images/cg/raytracer/first.png"/> </figure>
 
 This is the output is the combine with the intersection map of the rays with the objects and the shading using the LAMBERT properties for the object materials.
 
-![]({{base}}/images/cg/raytracer/second.png)
+<figure> <img src="/images/cg/raytracer/second.png"/> </figure>
 
 The following resources came in pretty handy during the implementation.
 
