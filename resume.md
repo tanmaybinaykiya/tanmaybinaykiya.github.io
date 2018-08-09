@@ -4,7 +4,7 @@ permalink: /resume/
 title: Resume
 ---
 
-[Single Page Downloadable Resume](https://github.com/tanmaybinaykiya/resume/raw/master/resume.pdf)
+<a href="https://github.com/tanmaybinaykiya/resume/raw/master/resume.pdf" target="_blank">Single Page Downloadable Resume</a>
 
 ## Summary
 Pursuing Master of Science in Computer Science at Georgia Institute of Technology, Atlanta with a specialization in Machine Learning. Exploring Deep Learning methods in Computer Vision. 
@@ -34,16 +34,15 @@ Machine Learning, Deep Learning, Computer Vision
 ## Academic Projects
 
 ### Text Classification, Feb 2018
-
-
+Implemented lyrics classifiers based on Naive Bayes, Perceptron, Logistic Regression techniques
 
 ### Sequence Labeling, Mar 2018
-
+Implemented a Part-of-Speech tagger based on Hidden Markov model and BiLSTM - Conditional Random Field models
 
 ### Dependency Parsing, Apr 2018
 
 ### Coreference Resolution, Apr 2018
-
+Built a coreference resolution pipeline using Attention-Based-LSTM
 
 ### Morse Code Recognition, Dec 2017  
 *	Implemented Morse code recognition system through the use of Hidden Markov Models
@@ -153,7 +152,7 @@ Graphic Design Intern
 Jun 2011 - Aug 2011   
 ##### Technologies Used: Adobe Photoshop, Adobe Illustrator, Adobe Dreamweaver, Adobe After Effects, Adobe Flash
 * Developed UI mocks for a client websites and developed UI elements standards.
-* Developed Marketing Presentation Videos for company clients
+* Developed Marketing Presentation Videos for clients
  
 ## Certifications  
 
