@@ -89,3 +89,12 @@ figure > img {
   margin: 0 auto;
   display: block;
 }
+
+.hmm-noise { 
+  width: 25%;
+  float: left;
+}
+
+.hmm-noise:first-child {
+  clear: both;
+}
