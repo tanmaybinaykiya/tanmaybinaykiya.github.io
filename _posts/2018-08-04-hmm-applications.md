@@ -5,6 +5,7 @@ date:         2018-04-08 18:04:08
 summary:      Hidden Markov Model is an excellent tool in the analysis of noisy unlabelled data sequences  
 categories:   hidden-markov-models sequence-model map-matching sequence-labelling morse-code decoding    
 cover-image:  /images/hmm.png
+highlighted: true
 ---
 
 Hidden Markov Model is a sequence model: A model which assigns a label or class to each unit in a sequence, thus mapping a sequence of observations to a sequence of labels.   

@@ -2,9 +2,9 @@
 $base-font-size: 14px !default;
 $bold-font-weight: bold !default;
 $font-family: 'medium-content-serif-font', 'Roboto', 'Helvetica Neue', Helvetica, 'Computer Modern Serif', 'Lato', sans-serif !default;
-$title-font-family: 'medium-content-sans-serif-font', 'Roboto Slab', 'Helvetica Neue', Helvetica, 'Computer Modern Serif', 'Lato', sans-serif !default;
+$title-font-family: 'Lato', 'medium-content-sans-serif-font', 'Roboto Slab', 'Helvetica Neue', Helvetica, 'Computer Modern Serif', 'Lato', sans-serif !default;
 $line-height: 1.5 !default;
-$heading-font-family: 'Roboto', 'Helvetica Neue', Helvetica, 'Computer Modern Serif', 'Lato', sans-serif !default;
+$heading-font-family: 'Lato', 'Helvetica Neue', Helvetica, 'Computer Modern Serif', sans-serif !default;
 $heading-font-weight: 400 !default;
 $heading-line-height: 1.25 !default;
 $monospace-font-family: 'Source Code Pro', Consolas, monospace, 'Computer Modern Typewriter' !default;
@@ -25,7 +25,7 @@ $h1-responsive-max: 3.84rem !default;
 $abbr-border-bottom: 1px black dotted;
 
 // Page width
-$measure-width: 48rem !default;
+$measure-width: 60rem !default;
 
 // Viewport widths
 $viewport-small: 32em;

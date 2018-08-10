@@ -1,12 +1,14 @@
 .profile-pic {
-    width:25%; 
-    float:left;
+    width: 14.25rem;
+    float: left;
+    padding: 0.25rem;
+    border: 1px solid #eee;
 }
 
 #index-wrapper section {
-    float:left; 
-    width:72%; 
-    padding-left:3%; 
+    float: left;
+    width: 43rem;
+    padding-left: 1rem;
 }
 #index-wrapper section h1 {
     margin-top:0; 
@@ -38,3 +40,21 @@
     margin: 0 auto;
     margin-bottom: 5px;
 }
+
+.index-post-title {
+    font-family: $title-font-family;
+}
+  
+.index-post-summary {
+    clear: both;    
+}
+
+.index-post {
+    margin-bottom: 0 !important;
+    border: none !important;
+}
+
+.index-post-details {
+    width: 60rem !important;
+}
+  

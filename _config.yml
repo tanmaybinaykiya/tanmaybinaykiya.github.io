@@ -5,14 +5,13 @@ author: Tanmay Binaykiya
 description: "Tanmay Binaykiya"
 baseurl:     ""
 type: 
-  - blogpost
   - project
 
 
 date_format: "%b %-d, %Y"
 header_pages:
- - articles.html
- - cv.md
+ - projects.html
+ - resume.md
  - contact.html
  
 permalink: /:title
@@ -28,8 +27,10 @@ meta_robots: index,follow
 animated:             true
 show_related_posts:   false
 show_post_footers:    false
-show_social_icons:    true
+show_social_icons:    false
 ajaxify_contact_form: false
+show_affiliations:    false
+show_highlighted_projects: false
 enable_mathjax: true
 extended_fonts: true
 enable_anchorjs: false

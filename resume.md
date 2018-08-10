@@ -4,7 +4,8 @@ permalink: /resume/
 title: Resume
 ---
 
-<a href="https://github.com/tanmaybinaykiya/resume/raw/master/resume.pdf" target="_blank">Resume[PDF]</a>
+<a href="https://github.com/tanmaybinaykiya/resume/raw/master/resume-single-page.pdf" target="_blank">Single Page Resume[PDF]</a> | 
+<a href="https://github.com/tanmaybinaykiya/resume/raw/master/resume-2-page.pdf" target="_blank">2 Page Resume[PDF]</a>
 
 ## Summary
 Pursuing Master of Science in Computer Science at Georgia Institute of Technology, Atlanta with a specialization in Machine Learning. Exploring Deep Learning methods in Computer Vision. 

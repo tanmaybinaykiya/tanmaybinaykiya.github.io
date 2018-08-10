@@ -2,18 +2,18 @@
   padding-top: $space-1;
   padding-bottom: $space-2;
   background-color: #fafafa;
-  border-bottom: 1px solid #f3f3f3;
+  border-bottom: 1px solid #e0e0e0;
 }
 
 .site-header a {
   color: #333;
-  font-size: $h3;
+  font-size: $h4;
   font-weight: 300;
   background-image: none;
 }
 
 .site-header .site-title {
-  font-size: $h1;
+  font-size: $h4;  
   font-family: $title-font-family;
 }
 
@@ -23,6 +23,8 @@
 
 .site-header nav a {
   color: #666;
+  font-weight: 700;
+  font-size: $base-font-size;
   font-family: $title-font-family;
 }
 

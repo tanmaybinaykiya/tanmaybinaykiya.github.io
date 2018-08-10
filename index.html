@@ -1,28 +1,33 @@
 ---
 layout: default
 ---
-{% assign posts_count = paginator.posts | size %}
 
-<div class="home">
-  {% if posts_count > 0 %}
-    <div class="posts">
-      {% for post in paginator.posts %}
-        <div class="post py3">
-          <p class="post-meta">{{ post.date | date: site.date_format }}</p>
-          <a href="{{ post.url | prepend: site.baseurl }}" class="post-link"><h3 class="h1 post-title">{{ post.title }}</h3></a>
-          <span class="post-summary">
-            {% if post.summary %}
-              {{ post.summary }}
-            {% else %}
-              {{ post.excerpt }}
-            {% endif %}
-          </span>
-        </div>
-      {% endfor %}
+<div id="index-wrapper">
+    <div class="profile-pic">
+      <img src="images/me.jpeg">
+      {% include social_links.html %}
     </div>
-
-    {% include pagination.html %}
-  {% else %}
-    <h1 class='center'>{{ site.text.index.coming_soon }}</h1>
-  {% endif %}
+    <section>
+        <h2>Biography</h2>
+        <span>
+          I am pursuing my Masters of Science in Computer Science at <a href="https://www.gatech.edu">Georgia Institute of Technology, Atlanta</a> with a focus in Machine Learning in Natural Language and Computer Vision.         
+          Before joining Tech, I worked at <a href="https://www.bluejeans.com">BlueJeans Networks</a> as a Senior Software Developer. I spent my summer of 2018, interning in the Maps Division at <a href ="https://www.uber.com">Uber</a>.
+        </span>
+        <br><br>
+        <span>
+          I completed my Bachelors(Hons.) of Engineering in Computer Science and Masters(Hons.) of Science in Mathematics from <a href="https://www.bits-pilani.org">Birla Institute of Technology & Science, Pilani</a>
+        </span>
+        {% if site.show_social_icons %}
+          {% include social_links.html %}
+        {% endif %}
+        {% if site.show_affiliations %}
+          {% include affiliations.html %}
+        {% endif %}
+        
+    </section>
 </div>
+<div class="clearfix"></div>
+
+{% if site.show_highlighted_projects %}
+  {% include highlighted_projects.html %}
+{% endif %}
