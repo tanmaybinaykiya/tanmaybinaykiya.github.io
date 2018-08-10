@@ -1,7 +1,6 @@
 ---
 layout: default
 ---
-
 <div id="index-wrapper">
     <img class="profile-pic" src="images/me.jpeg">
     <section>
@@ -39,5 +38,10 @@ layout: default
         </div>
     </section>
 </div>
+<style>
+.measure {
+    max-width: 60rem;
+}
+</style>
 
 
