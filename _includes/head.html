@@ -72,8 +72,14 @@
     <meta property="og:url" content="{{ site.url }}{{ page.url }}">
     <meta property="og:site_name" content="{{ site.title | xml_escape }}">
     {% if site.post_preview_image %}
-    <meta property="og:image" content="{{ site.url }}/images/me.jpeg">
+      {% if page.cover-image %}
+      <meta property="og:image" content="{{ site.url }}{{page.cover-image }}">
+      {% else %}
+      <meta property="og:image" content="{{ site.url }}/images/me.jpeg">
+      {% endif %}
     {% endif %}
+    
+    
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary" />
@@ -85,7 +91,11 @@
     <meta name="twitter:description" content="{% if page.summary %}{{ page.summary }}{% else %}{{ site.description }}{% endif %}" />
     <meta name="twitter:url" content="{{ site.url }}{{ page.url }}" />
     {% if site.post_preview_image %}
-    <meta name="twitter:image" content="{{ site.url }}/images/me.jpeg" />
+      {% if page.cover-image %}
+        <meta property="twitter:image" content="{{ site.url }}{{page.cover-image }}">
+      {% else %}
+        <meta property="twitter:image" content="{{ site.url }}/images/me.jpeg">
+      {% endif %}
     {% endif %}
 
     {% if site.google_analytics %}
