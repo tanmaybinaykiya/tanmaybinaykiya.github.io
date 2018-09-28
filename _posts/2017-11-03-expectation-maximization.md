@@ -4,7 +4,7 @@ title:      Automatic image processing using Expectation Maximization with Gauss
 date:       2017-11-13 17:11:13
 summary:    Automatic image processing is a key component to many AI systems, including facial recognition and video compression. One basic method for processing is segmentation, by which we divide an image into a fixed number of components in order to simplify its representation. For example, we can train a mixture of Gaussians to represent an image, and segment it according to the simplified representation as shown in the images below. We perform austomatic image segmentation using Gaussian Mixture Models
 categories: computer-vision gaussian-mixture-models image-processing image-segmentation expectation-maximization
-cover-image: 
+cover-image: /images/em/party_spock3.png
 ---
 
 Automatic image processing is a key component to many AI systems, including facial recognition and video compression. One basic method for processing is segmentation, by which we divide an image into a fixed number of components in order to simplify its representation. For example, we can train a mixture of Gaussians to represent an image, and segment it according to the simplified representation as shown in the images below.
