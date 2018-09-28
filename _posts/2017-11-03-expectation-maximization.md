@@ -25,7 +25,7 @@ Then we will replace each pixel in the image with its corresponding $$ \mu_i $$ 
 
 
 <figure>
-  <img class="img-half-width" src="/images/hmm.png" /><img class="img-half-width" src="/images/hmm.png" />
+  <img class="img-half-width" src="/images/em/party_spock.png" /><img class="img-half-width" src="/images/em/party_spock3.png" />
   <figcaption>Original on the left. Segmented with three components on the right</figcaption>
 </figure>
 
