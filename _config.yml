@@ -88,6 +88,7 @@ share_reddit: false
 share_stumbleupon: false
 share_hackernews: false
 
+future: true
 text:
   pagination:
     newer: 'Newer'
@@ -135,6 +136,7 @@ plugins:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-gist
+  - jekyll-redirect-from
 # https://github.com/jekyll/jekyll/issues/2938
 exclude:
   - Gemfile
