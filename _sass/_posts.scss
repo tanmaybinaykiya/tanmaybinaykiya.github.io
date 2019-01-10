@@ -102,16 +102,3 @@ figure > img {
 .hmm-noise:first-child {
   clear: both;
 }
-
-#high-posts .post {
-  margin:0;
-}
-#high-posts .post:nth-child(even) {
-  background-color: #fafcff;
-  border-color: #def;
-  border-width: 3px; 
-}
-
-#high-posts .post:nth-child(odd) {
-  background-color: #fff;
-}
