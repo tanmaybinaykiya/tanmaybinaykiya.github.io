@@ -1,23 +1,21 @@
 <div class="home">
     <section>
-    <h3>Highlighted Projects</h3>    
-    <div class="posts">
+    <h2 id="high-projects">Projects</h2>
+    <div id="high-posts" class="posts">
         {% for post in site.posts %}
-            {% if post.highlighted == true %}        
-            <div class="post py1 post-block index-post">
-            <!-- <div class="post-cover" style="background-image: url({{ post.cover-image | prepend: site.baseurl }})" ></div> -->
-            <div class="index-post-details post-details">
-                <a href="{{ post.url | prepend: site.baseurl }}" class="post-link">              
-                    <h4 class="post-title index-post-title">{{ post.title }}</h4>
-                </a>                
-                <span class="post-summary index-post-summary">
-                {% if post.summary %}
-                    {{ post.summary }}
-                {% endif %}
-                </span>
+            <div class="post py1 post-block">
+                <div class="post-cover" style="background-image: url({{ post.cover-image | prepend: site.baseurl }})" ></div>
+                <div class="post-details">
+                    <a href="{{ post.url | prepend: site.baseurl }}" class="post-link">              
+                        <h4 class="post-title index-post-title">{{ post.title }}</h4>
+                    </a>                
+                    <span class="post-summary index-post-summary">
+                    {% if post.summary %}
+                        {{ post.summary }}                    
+                    {% endif %}
+                    </span>
+                </div>
             </div>
-            </div>
-            {% endif %}
         {% endfor %}
     </div>    
     </section>

@@ -18,16 +18,20 @@ float: left;
   width: 10rem;
   height: 7.5rem;
   margin-right: 1rem;
-  border: 1px solid #333;
+  border: 1px solid #eee;
   background-size: 200px auto;
   background-repeat: no-repeat;
   background-size: contain; 
   background-position: center;
 }
 
+.post-cover {
+  margin-right: 0px !important;
+}
+
 .post-details {
   float: left;
-  margin-top:10px;
+  margin:10px;
   width: 48rem;
 }
 
@@ -97,4 +101,17 @@ figure > img {
 
 .hmm-noise:first-child {
   clear: both;
+}
+
+#high-posts .post {
+  margin:0;
+}
+#high-posts .post:nth-child(even) {
+  background-color: #fafcff;
+  border-color: #def;
+  border-width: 3px; 
+}
+
+#high-posts .post:nth-child(odd) {
+  background-color: #fff;
 }

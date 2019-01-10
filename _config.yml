@@ -3,14 +3,12 @@ title: Tanmay Binaykiya
 email: binaykiya.tanmay@gmail.com
 author: Tanmay Binaykiya
 description: "Tanmay Binaykiya"
-baseurl:     ""
+baseurl: ""
 type: 
   - project
 
-
 date_format: "%b %-d, %Y"
 header_pages:
- - projects.html
  - resume.md
  - contact.html
  
@@ -30,7 +28,7 @@ show_post_footers:    false
 show_social_icons:    false
 ajaxify_contact_form: false
 show_affiliations:    false
-show_highlighted_projects: false
+show_highlighted_projects: true
 enable_mathjax: true
 extended_fonts: true
 enable_anchorjs: false
