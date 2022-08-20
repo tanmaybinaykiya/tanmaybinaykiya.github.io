@@ -1,9 +1,10 @@
 ---
 layout: post
 title: Guide to Forking Pixyll
-date: 2019-01-26 19:22
-summary: Pixyll is available to you under the MIT license.
+date: 2000-01-01 00:00
+summary: This website was made possible by the great work of John Otander. Pixyll is available for anyone to fork under the MIT license.
 categories: jekyll pixyll
+cover-image: /images/octocat.jpg
 ---
 
 The following is an overview to copying and sharing Pixyll.[^1]
